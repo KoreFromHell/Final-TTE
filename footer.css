@@ -1,0 +1,145 @@
+.foot{
+    background-color: black;
+    width: 100%;
+    height: auto;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .row{
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+    background: transparent;
+  }
+  .row p{
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 10px;
+    background: transparent;
+  }
+  .row pre{
+    margin-left: 0;
+    font-size: 15px;
+    margin-top: 10px;
+    background: transparent;
+  }
+  .col{
+    flex-basis: 25%;
+    padding: 10px;
+    background: transparent;
+  }
+  .col a{
+    background: transparent;
+  }
+  
+  .col p,pre{
+    color: #f37474;
+    
+  }
+  .col ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-family:'poppins', sans-serif;
+    background: transparent;
+    background: none;
+  }
+  .col ul li a{
+    text-decoration: none;
+
+  }
+  form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+    background: transparent;
+  }
+  form .far{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  form button .fas{
+    font-size: 16px;
+    color: #ccc;
+  }
+  .social-updates{
+    padding-left: 0px;
+    margin-bottom: 10px;
+    color: #f37474;
+    background: transparent;
+  }
+  .social-icons{
+    background: transparent;
+  }
+  .social-icons i:hover{
+    color: #f37474;
+  }
+  
+  .social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    
+  }
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  
+}
+.copyright{
+    text-align: center;
+    background: transparent;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  .col {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  .row p {
+      font-size: 18px;
+  }
+  .social-icons .fab {
+      margin-right: 5px;
+  }
+}

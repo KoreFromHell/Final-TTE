@@ -1,0 +1,67 @@
+body {
+  background: black;
+}
+span {
+  color: white;
+}
+p {
+  color: white;
+}
+h3 {
+  color: white;
+}
+.star-rating {
+  color: #f39c12;
+}
+
+.review-summary {
+  font-weight: 800;
+  font-size: larger;
+  color: white;
+}
+
+.bar-container {
+  display: flex;
+  align-items: center;
+}
+
+.rating-bar {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 5px;
+}
+.rating-value {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.progress-bar {
+  background-color: #8e44ad;
+}
+
+.id {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.bar_photo {
+  width: 100px;
+  height: 50px;
+}
+
+hr {
+  border: 1px solid white;
+}
+
+.id {
+  object-fit: cover;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: #f37474;
+  letter-spacing: 1px;
+}

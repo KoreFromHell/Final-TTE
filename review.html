@@ -1,0 +1,292 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review</title>
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+<link rel="stylesheet" href="navbar.css" />
+<link rel="stylesheet" href="review.css" />
+<link rel="stylesheet" href="footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://use.fontawesome.com/a6f0361695.js"></script>
+  </head>
+  <body>
+
+    <div class="navbar">
+    <div class="logo">
+      <a href="home.html">TISPY TOPSY EGGY</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="contactus.html">About US</a></li>
+        <li><button class="BAT"><a href="reservation.html">Book A Table</a></button></li>
+      </ul>
+      
+       <!-- Hamburger icon for mobile view -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    </nav>
+   
+  </div>
+
+  
+<script>
+      function toggleMenu() {
+          const navbar = document.querySelector('.navbar');
+          const hamburgerIcon = document.querySelector('.hamburger i');
+
+          navbar.classList.toggle('active');
+
+          if (navbar.classList.contains('active')) {
+              hamburgerIcon.classList.remove('fa-bars');
+              hamburgerIcon.classList.add('fa-times');
+          } else {
+              hamburgerIcon.classList.remove('fa-times');
+              hamburgerIcon.classList.add('fa-bars');
+          }
+      }
+</script>
+    
+  
+      <div class="container">
+        <!-- <div class="border rounded-3 m-3 p-4 shadow border-opacity-25"> -->
+        <h3>Reviews</h3>
+        <hr />
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="review-summary">
+              4.0
+              <div class="star-rating">&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+            <p>10k ratings</p>
+          </div>
+          <div class="col-lg-9 col-md-6">
+            <div class="bar-container">
+              <div class="progress w-75 mx-3 my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 90%"
+                ></div>
+              </div>
+              <span>5.0 7k reviews</span>
+            </div>
+
+            <div class="bar-container">
+              <div class="progress w-75 mx-3 my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 70%"
+                ></div>
+              </div>
+              <span>4.0 2k reviews</span>
+            </div>
+
+            <div class="bar-container">
+              <div class="progress w-75 mx-3 my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%"
+                ></div>
+              </div>
+              <span>3.0 900 reviews</span>
+            </div>
+
+            <div class="bar-container">
+              <div class="progress w-75 mx-3 my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 10%"
+                ></div>
+              </div>
+              <span>2.0 75 reviews</span>
+            </div>
+
+            <div class="bar-container">
+              <div class="progress w-75 mx-3 my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 5%"
+                ></div>
+              </div>
+              <span>1.0 25 reviews</span>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5 my-2">
+          <div class="row text-center">
+            <div class="col">
+              <div class="rating-bar">
+                <div class="rating-value">4.0</div>
+                Cleanliness
+              </div>
+            </div>
+            <div class="col">
+              <div class="rating-bar">
+                <div class="rating-value">4.0</div>
+                Safety & Security
+              </div>
+            </div>
+            <div class="col">
+              <div class="rating-bar">
+                <div class="rating-value">4.0</div>
+                Staff
+              </div>
+            </div>
+            <div class="col">
+              <div class="rating-bar">
+                <div class="rating-value">3.5</div>
+                Amenities
+              </div>
+            </div>
+            <div class="col">
+              <div class="rating-bar">
+                <div class="rating-value">3.0</div>
+                Location
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-10">
+              <img class="id" src="id3.jpg" alt="A photo of human" />
+              <span class="mx-2 name">Sarah J</span>
+              <span class="border border-secondary bg-secondary rounded">
+                <small class="mx-1 badge bg-secondary">a month ago</small>
+              </span>
+            </div>
+            <div class="col-md-2">
+              <div class="review-summary">
+                5.0
+                <span class="star-rating">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </span>
+              </div>
+            </div>
+          </div>
+          <p class="my-2">
+            I had an amazing time at the bar! The ambiance is perfect for a
+            night out — dim lighting, cozy seating, and great music. The
+            cocktails are expertly made, and the bartenders are super
+            attentive.I'll definitely be returning with friends. This place is a
+            hidden gem!
+          </p>
+        </div>
+        <hr />
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-10">
+              <img class="id" src="id2.jpg" alt="A photo of human" />
+              <span class="mx-2 name">Mike R</span>
+              <span class="border border-secondary bg-secondary rounded">
+                <span class="mx-1 badge bg-secondary">a month ago</span>
+              </span>
+            </div>
+            <div class="col-md-2">
+              <div class="review-summary">
+                5.0
+                <span class="star-rating">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </span>
+              </div>
+            </div>
+          </div>
+          <p class="my-2">
+            First time at Tipsy Topsy Eggy, and I’m hooked! The entire
+            experience was perfect. From the cozy seating to the incredible
+            drinks, everything was spot on. The bartenders really know what
+            they're doing, and the drinks come out fast despite the bar being
+            busy. Highly recommend trying their signature cocktails. I’ll be
+            bringing all my friends here from now on!
+          </p>
+        </div>
+        <hr />
+        <a class="btn btn-primary" href="morereviews.html" role="button"
+          >Read all reviews</a
+        >
+        <a class="btn btn-primary" href="Leaveareview.html" role="button"
+          >Leave a review</a
+        >
+      </div>
+
+      <div class="foot my-5">
+        <footer>
+          <div class="row footerRow">
+            <div class="col footerCol">
+              <p>TIPSY TOPSY EGGY</p>
+              <pre>
+                Welcome to the TIPSY TOPSY EGGY.
+                Make Moments, Live Your Life
+                sip, sip, Hooray
+                Let the Good Times Roll.
+                Memories that Last a Lifetime.
+              </pre>
+            </div>
+            <div class="col footerCol">
+              <ul>
+                <li>
+                  <a href="https://www.drinkaware.co.uk/"
+                    >WWW.DRINKAWARE.CO.UK</a
+                  >
+                </li>
+                <li><a href="privacypolicy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookiepolicy.html">COOKIE POLICY</a></li>
+                <li><a href="terms&conditions">TERMS&CONDITIONS</a></li>
+              </ul>
+            </div>
+            <div class="col footerCol">
+              <a href="contactus.html">CONTACT US</a>
+              <form>
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="enter your email" required />
+                <button type="submit">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+              <h4 class="social-updates">SOCIAL UPDATES</h4>
+              <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h3 class="copyright h4">
+            TIPSY TOPSY &copy 2024 - All Rights Reserved
+          </h3>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
