@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Food Menu</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="foodmenu.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="home.html">TIPSY TOPSY EGGY</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contactus.html">About Us</a></li>
+                <li><button class="book-table-btn"><a href="reservation.html">Book A Table</a></button></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="headdiv">
+            <img class="himage" src="/images/me.jpg" alt="coverphoto" width="400px" height="300px"
+                style="border-radius: 10px;">
+            <img src="/images/logo1.jpg" alt="logoimage" width="250px" height="100px">
+            <h1 style="color: aqua; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-left: 50px;">
+                MENU
+            </h1>
+            <h2 style="color: aqua; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 50px;">
+                Hello from the inside the BAR.</h2>
+            <p style="color: aqua; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 50px;">
+                This is a heaven for you if you are looking for delicious meals!!!</p>
+            <p
+                style="color: #cb202d; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 50px;">
+                &#9825 &#9825 &#9825 &#9825 &#9825 &#9825 &#9825 &#9825 &#9825 &#9825 &#9825 &#9825</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="menu">
+            <div class="heading">
+                <h1>TIPSY TOPSY EGGY</h1>
+                <h1>MENU</h1>
+                <h2>&mdash; Special Dishes &mdash; </h2>
+            </div>
+            <div class="food-items">
+                <img src="ShrimpyDelights.jpg" alt="Shrimpy Delights">
+                <div class="details">
+                    <h5>Crispy Bites</h5>
+                    <h5 class="price">$8</h5>
+                    <p>The shrimp are cooked and served in small glasses with a cocktail sauce made of ketchup,
+                        horseradish,
+                        and lemon juice. The cocktail sauce is often layered over lettuce or other vegetables. Shrimp
+                        cocktail is a popular appetizer and is often served with crackers or bread.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <!-- Add more food items here -->
+            <div class="food-items">
+                <img src="itunarolls.jpg" alt="menu_img">
+                <div class="details">
+                    <h5>Tuna ROLLS</h5>
+                    <h5 class="price"> $15 </h5>
+
+                    <p>The appetizers are wrapped in a thin, crispy shell and filled with a reddish filling. They are
+                        served
+                        on a bed of greens and garnished with microgreens. The appetizers are likely a type of spring
+                        roll,
+                        perhaps a tuna tartare spring roll.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="salmonskewers.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Salmon skewers</h5>
+                    <h5 class="price"> $8 </h5>
+
+                    <p>The appetizers are made of a rolled pastry filled with a red filling. The pastry is likely a type
+                        of
+                        seaweed wrap, and the filling may be a fish or seafood salad. The appetizers are a popular
+                        Japanese
+                        dish called "kanimiso."</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="TinyTemptations.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Tiny Temptations</h5>
+                    <h5 class="price"> $12 </h5>
+
+                    <p>The appetizers are arranged on a slate plate and are made of different ingredients, including
+                        zucchini, cheese, prosciutto, and dried tomatoes. The appetizers are skewered and garnished with
+                        fresh herbs. They are a creative and colorful way to serve hors d'oeuvres.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="Savory Layered Pastry.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Roast Salmon</h5>
+                    <h5 class="price"> $15 </h5>
+
+                    <p>The appetizers are made of a thin, crispy crust, filled with layers of salmon, cheese, and a
+                        creamy
+                        sauce. They are skewered with black sticks and garnished with fresh herbs. The appetizers are a
+                        delicious and elegant way to serve hors d'oeuvres.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="Camarão Empanado.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Camarão Empanado</h5>
+                    <h5 class="price"> $10 </h5>
+
+                    <p> These are breaded and deep-fried shrimp, often served on skewers with a sweet and tangy dipping
+                        sauce. The crispy exterior and tender shrimp make for a delicious and satisfying appetizer.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="heading">
+                <h3>&mdash; GRILL DISHES &mdash; </h3>
+            </div>
+            <div class="food-items">
+                <img src="Chicken Shish Kebabs.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Chicken Shish Kebabs</h5>
+                    <h5 class="price"> $8 </h5>
+
+                    <p>Shish kebabs are a popular dish made by grilling marinated pieces of meat (often chicken, lamb,
+                        or
+                        beef) on skewers, along with vegetables like peppers, onions, and tomatoes. The marinade can
+                        vary
+                        but typically includes ingredients like olive oil, lemon juice, garlic, and spices like paprika,
+                        cumin, and oregano.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="Hawaiian Bacon Chicken Kebabs.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Hawaiian Bacon Chicken kebabs</h5>
+                    <h5 class="price"> $15 </h5>
+
+                    <p>These kebabs are a popular combination of sweet and savory flavors. They typically include
+                        grilled
+                        chicken, bacon, pineapple chunks, bell peppers, and onions, all marinated in a sweet and tangy
+                        sauce. The combination of ingredients creates a delicious and satisfying dish.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="Honey Chipotle Grilled Chicken Skewers.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Honey Chipotle Grilled Chicken Skewers</h5>
+                    <h5 class="price"> $8 </h5>
+
+                    <p>These skewers are a popular dish made by grilling marinated chicken on skewers. The marinade
+                        typically includes ingredients like honey, chipotle peppers, garlic, and spices. The combination
+                        of
+                        sweet, smoky, and spicy flavors creates a delicious and satisfying dish.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="Grilled Shrimp Kebabs.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Grilled Shrimp Kebabs</h5>
+                    <h5 class="price"> $12 </h5>
+
+                    <p>Shrimp kebabs are a popular dish made by grilling marinated shrimp on skewers, along with
+                        vegetables
+                        like bell peppers, onions, and zucchini. The marinade can vary but typically includes
+                        ingredients
+                        like olive oil, lemon juice, garlic, and spices like paprika, cumin, and oregano.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="GGB shrimp.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5> Grilled Garlic Butter Shrimp</h5>
+                    <h5 class="price"> $15 </h5>
+
+                    <p>Grilled Garlic Butter Shrimp is a popular dish made by grilling shrimp and then tossing them in a
+                        flavorful butter sauce seasoned with garlic. It's a simple yet delicious dish that's perfect for
+                        a
+                        quick and easy meal.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="Satay.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Satay</h5>
+                    <h5 class="price"> $10 </h5>
+
+                    <p>Satay is a popular Southeast Asian dish consisting of grilled skewers of meat, typically
+                        marinated in
+                        a spicy and sweet sauce. The meat can be chicken, beef, pork, lamb, or seafood. Satay is often
+                        served with a peanut sauce, cucumber salad, and rice.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="Grilled Steak and Shrimp.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Grilled Steak and Shrimp</h5>
+                    <h5 class="price"> $10 </h5>
+
+                    <p>This dish is a classic combination of grilled steak and shrimp, often served with a flavorful
+                        marinade or sauce. The steak and shrimp can be grilled together or separately, and they are
+                        often
+                        served with sides like grilled vegetables or a salad.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="Grilled Mushroom Skewers.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Grilled Mushroom Skewers</h5>
+                    <h5 class="price"> $10 </h5>
+
+                    <p>These skewers are a popular vegetarian dish made by grilling marinated mushrooms on skewers. The
+                        marinade can vary but typically includes ingredients like olive oil, soy sauce, garlic, and
+                        herbs
+                        like thyme or rosemary. Grilled mushroom skewers are a delicious and healthy appetizer or side
+                        dish.
+                    </p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="Grilled Whole Sea Bream.jpg" alt="menu_img">
+                <div class="details">
+
+                    <h5>Grilled Whole Sea Bream</h5>
+                    <h5 class="price"> $10 </h5>
+
+                    <p>
+                        Sea bream is a popular fish known for its delicate flavor and mild taste. Grilling it whole
+                        allows
+                        the fish to cook evenly and retain its moisture. It's often served with lemon wedges, herbs, and
+                        vegetables.
+                    </p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="foot">
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        TIPSY TOPSY EGGY
+                    </p>
+                    <pre>
+                  Welcome to the TIPSY TOPSY EGGY.
+                  Make Moments, Live Your Life
+                  sip, sip, Hooray
+                  Let the Good Times Roll.
+                  Memories that Last a Lifetime.
+                </pre>
+                </div>
+                <div class="col">
+                    <p><a href="https://www.drinkaware.co.uk/">WWW.DRINKAWARE.CO.UK</a></p>
+                    <p><a href="privacypolicy.html">PRIVACY POLICY</a></p>
+                    <p><a href="cookiepolicy.html">COOKIE POLICY</a></p>
+                    <p><a href="terms&conditions">TERMS&CONDITIONS</a></p>
+                </div>
+                <div class="col">
+                    <a href="contactus.html">CONTACT US</a>
+                    <form>
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="enter your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <h4 class="social-updates">SOCIAL UPDATES</h4>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <h3 class="copyright">TIPSY TOPSY &copy 2024 - All Rights Reserved</h3>
+
+        </footer>
+    </div>
+</body>
+
+</html>
