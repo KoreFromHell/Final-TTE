@@ -34,7 +34,7 @@ This project is licensed under the MIT License.
 📬 Contact
 If you have any questions, suggestions, or just want to say hi:
 
-Email: your-email@example.com
+Email: eggcode@gmail.com
 Website: Your Website
 Social Media: Twitter, Instagram
 Cheers! 🥂
