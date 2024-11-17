@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR</title>
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="home.html">TISPY TOPSY EGGY</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="contactus.html">About US</a></li>
+        <li><button class="BAT"><a href="reservation.html">Book A Table</a></button></li>
+      </ul>
+      
+       <!-- Hamburger icon for mobile view -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    </nav>
+   
+  </div>
+
+  
+<script>
+      function toggleMenu() {
+          const navbar = document.querySelector('.navbar');
+          const hamburgerIcon = document.querySelector('.hamburger i');
+
+          navbar.classList.toggle('active');
+
+          if (navbar.classList.contains('active')) {
+              hamburgerIcon.classList.remove('fa-bars');
+              hamburgerIcon.classList.add('fa-times');
+          } else {
+              hamburgerIcon.classList.remove('fa-times');
+              hamburgerIcon.classList.add('fa-bars');
+          }
+      }
+</script>
+    
+</body>
+</html>

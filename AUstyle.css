@@ -1,0 +1,488 @@
+ *{
+  margin: 0;
+  padding: 0;
+} 
+/* nav.navbar{
+    background: linear-gradient(to right, #28282b, #1d0a04);
+height: 50px;
+}   */
+    
+      header{
+        /* background: #1e1e1e;  
+        background: -webkit-linear-gradient(to right, #190A05, #1e1e1e);  
+        background: linear-gradient(to right, #190A05, #1e1e1e);   */
+        background: #232526;  
+        background: -webkit-linear-gradient(to right, #2a2b2c, #000000); 
+        background: linear-gradient(to right, #2a2b2c, #000000);
+          text-align: center;
+          height:330px;
+          padding-top: 0%;
+          margin: 0;
+          
+      }
+    
+     .head{
+        padding-top: 20px;
+      } 
+      .head img{
+        width: 320px;
+        height: 300px;
+       
+      }
+      .head h2{
+        padding-top: 40px;
+      }
+      .first{
+          border: solid 1.5px black;
+          border-radius: 7px;
+          overflow: auto; 
+          width: 68%;
+          height: auto;
+         display: flex;
+          margin: 0px 17% 20px 17%;
+          align-items: center;
+          justify-content: center;
+          
+      }
+      .first img{
+          width: 500px;
+          height: 502px;
+          
+      }
+      .par h2{
+        padding: 10px;
+        text-align: justify;
+        color:aliceblue;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .par p{
+          font-size: larger;
+        padding: 10px;
+        text-align: justify;
+        color: aliceblue;
+        text-indent: 40px;
+        line-height: 35px;
+      }
+    
+    article{
+      display: block;
+      background: #232526;  
+        background: -webkit-linear-gradient(to right, #2a2b2c, #000000); 
+        background: linear-gradient(to right, #2a2b2c, #000000); 
+
+    }
+      .card{
+    display: flex;
+    float: left;
+    margin: 20px 50px 20px 100px;
+    text-align: center;
+    justify-content: center;  
+    align-items: center;
+    color: #190A05;
+    
+    background: #1e1e1e;  
+    background: -webkit-linear-gradient(to right, #190A05, #1e1e1e);  
+    background: linear-gradient(to right, #190A05, #1e1e1e);  
+
+  }
+ 
+  .card img{
+    display: flex;
+  }
+
+  
+     
+      .middle h2{
+        text-align: center;
+        color: rgb(225, 218, 228);
+        padding: 35px ;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 30px;
+        
+
+      }
+      .middle p{
+        text-align: justify;
+        line-height: 35px;
+        text-indent: 50px;
+        color: rgb(225, 218, 228);
+        padding: 10px 35px 15px 35px; 
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;          
+        font-style: italic;
+      }
+    
+      .card {
+  display: block;
+  margin:60px 35px 50px 9%;
+  text-align: center;
+  justify-content: center;  
+  align-items: center;
+  color: #190A05;
+  
+  transition: transform 0.3s, z-index 0.3s;
+  z-index: 1;
+  position: relative;
+  opacity: 70%;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  z-index: 10; /* Bring the card to the front on hover */
+  opacity: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+      .card-1body p{
+        text-align: justify;
+        padding: 5px;
+        text-indent: 7px;
+        color: whitesmoke;
+        font-size: 16px;
+        float: left;
+      }
+      .card-2body p{
+        text-align: justify;
+        padding: 5px;
+        text-indent: 7px;
+        color: whitesmoke;
+        font-size: 16px;
+        float: left;
+      }
+      .card-3body p{
+        text-align: justify;
+        padding: 5px;
+        text-indent: 7px;
+        color: whitesmoke;
+        font-size: 16px;
+        float: left;
+      }
+      .card h4{
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      } 
+      section{
+       
+        padding: 35px 0px 0px 0px;
+        height: auto;
+        background: #232526;  
+        background: -webkit-linear-gradient(to right, #2a2b2c, #000000); 
+        background: linear-gradient(to right, #2a2b2c, #000000);
+      }
+        section h2{
+        color: wheat;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  float: left;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 10px;
+        
+       }   
+       h2{
+        color: wheat;
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+     section h3{
+        
+        color: aliceblue;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+       float: left;
+       text-align: center;
+      
+        
+    text-align: center;
+    font-style: italic;
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+    }
+    
+    .one{
+    width: 53%;
+    height: auto;
+    display: flex;
+    float: left;
+    
+    }
+    .one img{
+         width: 780px;
+        height: 520px; 
+        display: flex;
+        float: left;
+        position: relative;
+        margin: 20px 20px 20px 20px;
+    }
+    .oneP  {
+        float: left;
+       background-attachment: fixed;
+        width: 47%;
+        height: 500px;
+        opacity: 0;
+        transition: all 0.9s ease-out;
+        overflow: auto;
+    }
+    .oneP:hover{    
+        opacity: 100%;
+        transform: translateY(80px);
+    }
+     .oneP h3{
+        display: block;
+        color: wheat;
+        text-align: left;
+    
+    }
+    
+    .oneP p{
+        display: block; 
+        color: aliceblue;
+        font-size: 18px;
+       
+    }
+    
+    .oneP ul{
+        display: block;
+        float: left;
+       
+    }
+    
+       .two{
+        width: 53%;
+    height: auto;
+    display: flex;
+    float: left;
+    }
+    
+    .two img{
+        width: 780px;
+        height: 520px; 
+        display: flex;
+        float: left;
+       position: relative;
+        margin: 20px 20px 20px 20px;
+        
+
+    }
+    
+    .twoP {
+        float: left;
+       background-attachment: fixed;
+        width: 47%;
+        height: 520px;
+        opacity:0;
+        transition: all 0.9s ease-out;
+        overflow: auto;
+       
+    }
+    .twoP:hover{
+        transform: translateY(80px);
+        opacity: 100%;
+    }
+    .twoP h3{
+        display: block;
+        color: wheat;
+        text-align: left;
+    
+    }
+    .twoP p{
+        display: block;
+        color: aliceblue;
+    }
+    .twoP ul{
+        display: block;
+        float: left;
+    }
+    .three{
+        width: 53%;
+    height: auto;
+    display: flex;
+    float: left;
+    }
+    .three img{
+        width: 780px;
+        height: 520px; 
+        display: flex;
+        float: left;
+        position: relative;
+        margin: 20px 20px 20px 20px;
+    }
+    .threeP{
+        float: left;
+       
+        width: 47%;
+        height: 500px;
+        opacity:0;
+        transition: all 0.9s ease-out;
+        overflow: auto;
+    }
+    .threeP:hover{
+        transform: translateY(80px);
+        opacity: 100;
+    }
+    .threeP h3{display: block;
+        color: wheat;
+        text-align: left;
+      }
+    .threeP p{
+        display: block;
+        color: aliceblue;
+    }  
+    .threeP ul{
+        display: block;
+    }
+    
+    section li{
+    color: white;
+    margin: 0px 150px 0px 15px;
+    text-align: justify;
+    }
+    
+    .carousel-control-prev,.carousel-control-next{
+        bottom: 80px !important;
+        top: auto;
+        width: 30px;
+        height: 30px;
+    }
+    .carousel-control-prev{
+        margin-left: 80%;
+    }
+    .carousel-control-next{
+        margin-right: 15%;
+    }
+        
+
+/* Responsive CSS adjustments */
+@media only screen and (max-width: 1200px) {
+  /* Adjust article content */
+  .first {
+      width: 90%;
+      flex-direction: column;
+      margin: 0 auto;
+  }
+  .first img {
+      width: 100%;
+      height: auto;
+  }
+  .par h2, .par p {
+      text-align: justify;
+      padding: 10px;
+  }
+}
+
+/* Tablet and mobile adjustments */
+@media only screen and (max-width: 768px) {
+
+  .navbar ul {
+      flex-direction: column;
+      text-align: left;
+  }
+  .banner, .head {
+      text-align: center;
+  }
+  .head img{
+    width: 250px;
+    height: 280px;
+   
+  }
+  .card{
+  opacity: 100%;
+  transition: transform 0s, z-index 0s;
+  z-index: 0;
+  }
+  /* Carousel item adjustments */
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+.carousel-item .oneP, 
+.carousel-item .twoP, 
+.carousel-item .threeP {
+    font-size: 16px;
+    width: 100%;
+opacity: 100%;
+}
+.carousel-item .oneP li, 
+.carousel-item .twoP li, 
+.carousel-item .threePli{
+  margin: 20px;
+}
+
+  .carousel-item .oneP:hover, .carousel-item .twoP:hover, .carousel-item .threeP:hover {
+    transform:none;}
+  .carousel-control-prev, .carousel-control-next {
+    width: 25px;
+    height: 25px;
+    bottom: 40px;
+}
+
+.carousel-control-prev {
+    margin-left: 5%;
+}
+
+.carousel-control-next {
+    margin-right: 5%;
+}
+  
+ 
+}
+
+
+@media only screen and (max-width: 576px) {
+  .head img{
+    width: 250px;
+    height: 280px;
+   
+  }
+/* Carousel item adjustments */
+.carousel-item .one, .carousel-item .two, .carousel-item .three{
+  width: auto;
+  height: auto;
+  float: none;
+ overflow: auto;
+}
+
+.carousel-item .oneP, .carousel-item .twoP, .carousel-item .threeP {
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  opacity: 100%;
+  transition: none;
+  overflow: auto;
+
+}
+.carousel-item .oneP:hover, .carousel-item .twoP:hover, .carousel-item .threeP:hover {
+transform:none;}
+.carousel-control-prev, .carousel-control-next {
+width: 25px;
+height: 25px;
+bottom: 40px;
+}
+
+.carousel-control-prev {
+margin-left: 5%;
+}
+
+.carousel-control-next {
+margin-right: 5%;
+}
+
+
+  .carousel-control-prev, .carousel-control-next {
+      width: 20px;
+      height: 20px;
+      bottom: 30px;
+  }
+
+}

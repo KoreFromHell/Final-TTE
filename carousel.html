@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    .card{
+      background-color: rgb(183, 113, 113);
+      margin: 20px 40px 70px 150px;
+      height: auto;
+      flex-direction: column;
+      display: flex;
+      float: left;
+      transition: transform 0.5s;
+      z-index: 1;
+    position: relative;
+    border: solid 2px white;
+    }
+    .card:hover{
+      transform: scale(1.15);
+      z-index: 10;
+    }
+    .card-body p{
+      float: left;
+      display: flex;
+      color: white;
+      text-align: justify;
+    }
+    body{
+      background-color: rgb(92, 49, 49);
+    }
+
+
+  .card img{
+    opacity: 100%;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 50%;
+    
+  }
+  
+.cer img{
+  width: 80%;
+  height: auto;
+  margin: 50px 10% 50px 10%;
+
+}
+
+@media (max-width: 768px) {
+ .card{
+  flex-direction: column;
+  width: 80%;
+  margin: 20px 20px 30px 20px;
+  transition: none;
+  z-index: 0;
+
+ }
+ .card:hover{
+      transform: none;
+     
+    }
+}
+
+  </style>
+</head>
+<body>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card" style="width: 18rem;">
+          <img src="image/boy1.jpeg" class="card-img-top" alt="..." height="400px">
+          <div class="card-body">
+            <p class="card-text">Hello! I'm Ouu Nhaout, the CEO of Tipsy Topsy Eggy. I’m dedicated to leading our team in delivering unforgettable dining experiences every day.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://dishesdelish.com/wp-content/uploads/2019/09/Sweet-Poison-Cocktail-redo-10.jpg.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hello! I’m DKSN, the COO of Tipsy Topsy Eggy. I’m focused on keeping everything running smoothly behind the scenes to ensure a seamless experience for our guests.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHSTR-dJO-9BtDTkc_7ajZp1ZMw_bV-fjYFoHTWoeRoa8J8ifRLoR45vn6p_oU2B48Zz8&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hello! I'm Nora, the general manager of Tipsy Topsy Eggy. I’m passionate about creating a welcoming space where good food and great company come together.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.kimscravings.com/wp-content/uploads/2019/07/vodka-watermelon-cocktails-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hi! I’m Main, the Assistant Manager at Tipsy Topsy Eggy. I’m here to support our team and help create a memorable experience for every guest.</p>
+
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.kimscravings.com/wp-content/uploads/2019/07/vodka-watermelon-cocktails-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hi! I’m Kore, the HR Manager at Tipsy Topsy Eggy. I’m passionate about building a team that feels like family and fostering a positive work environment.</p>
+
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.kimscravings.com/wp-content/uploads/2019/07/vodka-watermelon-cocktails-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hello! I’m Zett, the B&F Manager at Tipsy Topsy Eggy. My goal is to craft an exceptional menu that pairs delicious food with the perfect drinks.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="card" style="width: 18rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5KzSeaJaS2UeojtJW0acqwe7JR7K_xekxTTBw-8o2Vm73KhhEapVZnIxHkRmIxcwYOcs&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hello! I’m Fried Egg, the IT Manager at Tipsy Topsy Eggy. I ensure our tech runs like clockwork to keep your experience smooth and hassle-free.</p>
+
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5KzSeaJaS2UeojtJW0acqwe7JR7K_xekxTTBw-8o2Vm73KhhEapVZnIxHkRmIxcwYOcs&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hi! I’m Ruto, the Finance and Accounting Manager for Tipsy Topsy Eggy. I handle the numbers so the team can focus on serving up unforgettable experiences.</p>
+
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5KzSeaJaS2UeojtJW0acqwe7JR7K_xekxTTBw-8o2Vm73KhhEapVZnIxHkRmIxcwYOcs&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hi there! I’m Day, the Marketing & Event Manager for Tipsy Topsy Eggy. I bring the buzz, making sure every event we host is as vibrant as our menu.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="carousel-item">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.kimscravings.com/wp-content/uploads/2019/07/vodka-watermelon-cocktails-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>Hey! I’m Ruby, the Senior Chef at Tipsy Topsy Eggy. I love creating dishes that not only taste amazing but also bring people together.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.kimscravings.com/wp-content/uploads/2019/07/vodka-watermelon-cocktails-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hello! I’m Bora, the Production Executive at Tipsy Topsy Eggy. I’m committed to ensuring every dish meets our high standards of quality and taste.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.kimscravings.com/wp-content/uploads/2019/07/vodka-watermelon-cocktails-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hey! I’m Do Do, Production Executive at Tipsy Topsy Eggy. I oversee multiple operations to maintain consistency and excellence across the board.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="cer">
+    <img src="image/Black and Gold Luxury  Achievement Certificate.png" alt="Oc">
+
+  </div>
+  
+</body>
+</html>

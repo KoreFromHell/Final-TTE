@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(61, 23, 23, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sidebar a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-but {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo a {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 4px 4px rgba(255, 0, 0, 0.8);
+    font-size: 25px;
+}
+
+.logo a:hover {
+    color: red;
+}
+
+nav li {
+    color: white;
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+    transition: 0.5s;
+}
+
+a, button {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f37474;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    background: rgb(46, 6, 6);
+    border: 2px solid red;
+    border-radius: 50px;
+    padding: 10px 10px;
+  
+}
+
+nav li a:hover, button a:hover {
+    color: red;
+}
+
+.dropdown {
+    display: none;
+}
+
+nav li:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown ul {
+    width: 150px;
+    display: block;
+    margin: 10px;
+}
+
+.dropdown ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-but {
+        display: block;
+    }
+   
+    button {
+        display: flex;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
