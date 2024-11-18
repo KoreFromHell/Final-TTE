@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
     background-color: #000;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 /* navbar start */
@@ -395,6 +396,7 @@ button a:hover{
     font-weight: 900;
     font-style: normal;
     color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .intro p{
     font-size: 20px ;

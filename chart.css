@@ -1,0 +1,243 @@
+/************************************************/
+/* Convenient global rules             [STABLE] */
+/************************************************/
+[outlines="1"] * { outline: 1px dashed } /* for debugging */
+
+ *         { box-sizing: border-box }
+html, body { width: 100%; max-width: 100% }
+body       { margin: 0; min-height: 100vh; background-color: #1e1e1e; }
+
+a { text-decoration: none; color: currentColor }
+
+[band] { display: flex; flex-flow: row wrap;
+         justify-content: center; align-content: center;
+         padding: calc(5vh + 48px) calc(19.5vw - 54.4px) }
+
+/* generic flexbox shortcuts */
+[F]         { display: flex }
+[R]         { flex-direction: row    } /* horizontal: row of 1:N columns (FBL default) */
+[C]         { flex-direction: column } /* vertical: column of 1:N rows   */
+[W]         { flex-wrap: wrap }
+
+
+
+/* If you want the knots distributed as-is, remove 'align-items' */
+[data-chart]        { display: flex; align-items: center } /* align [OPTIONAL], try! */
+[data-knot]         { display: flex; flex-grow: 1 }        /* [MANDATORY] */
+
+/* default alignments */
+[data-knot]         { justify-content: center; height: auto; width: auto;}
+[data-knot*="node"] { align-items: stretch    }
+[data-knot*="step"] { align-items: flex-start } 
+
+/* this code keeps the lines connect to the symbols */
+[data-knot]         { position: relative; z-index: 1 } /* new stacking context */
+[data-knot]:before,
+[data-knot]:after   { position: absolute; z-index: -1; content: '' }
+/* put some character in 'content' to keep track when debugging */
+
+/* Horizontal lines ('node') setup */
+[data-knot]:before  { top   :  1px } /* adjust -+1 for thickess of outlines */
+[data-knot]:after   { bottom: -1px }
+
+[data-knot*="node"]:before,[data-knot*="node"]:after
+{ height: 0px /* for IE11 */; width: 50% }
+
+/* Vertical lines ('step') setup */
+[data-knot*="step"]:before,[data-knot*="step"]:after
+{ width: 0px /* for IE11 */; left: 50%; right: 50% }
+
+/* positioning of the lines ('lft','ctr','rgt') */
+[data-knot*="ctr"]:before,[data-knot*="ctr"]:after
+{ width: 100%; left: 0 }
+
+/* (EITHER) Handles document reading direction (dir="ltr" in <body>), default is 'ltr' */
+[dir="ltr"] [data-knot*="lft"]:before, [dir="ltr"] [data-knot*="lft"]:after { left : 50% }
+[dir="ltr"] [data-knot*="rgt"]:before, [dir="ltr"] [data-knot*="rgt"]:after { right: 50% }
+
+[dir="rtl"] [data-knot*="lft"]:before, [dir="rtl"] [data-knot*="lft"]:after { right: 50% }
+[dir="rtl"] [data-knot*="rgt"]:before, [dir="rtl"] [data-knot*="rgt"]:after { left : 50% }
+
+/* (OR) For use without [dir]
+[data-knot*="lft"]:before, [data-knot*="lft"]:after { left : 50% }
+[data-knot*="rgt"]:before, [data-knot*="rgt"]:after { right: 50% }
+*/
+
+/* line coloring */
+[data-knot*="node"]:before,/*[data-knot*="node.step"]:after,/* REMOVE */
+[data-knot*="step"]:before,[data-knot*="step"]:after { outline: 1px solid #666 }
+
+/* no line drawing cases */
+[data-knot="step"]:after, /* notice the missing '*' */
+[data-knot*="start"]:before ,[data-knot*="stop"]:after { outline: none }
+
+/*
+    responsive sizes: T/B p1(320,6) p2(1280,24) and L/R p1(320,4) p2(1280,16)
+    modify these to meet specific requirements.
+*/
+[data-knot*="step"]         { padding: 1.875vmin 1.25vmin }
+[data-knot*="step"]:before  { height : 1.875vmin }              /* Same height as [data-step] T/B padding */
+[data-knot*="step"]:after   { height : calc(100% - 1.875vmin) } /* pct to from below (minus T/B padding) */
+
+/****************/
+/* Symbol Setup */
+/****************/
+/*
+    Chart 'data-symbol's, flexbox intended use
+
+    FBL (V)     FBL (H)      Any
+    --------    -------      -------
+    (S)ymbol -> (H)eader  -> content
+             -> (C)ontent -> content
+             -> (F)ooter  -> content
+*/
+[data-symbol],
+[data-symbol]>*         { display: flex }   /* S,H,C,F are flexbox parent containers */
+[data-symbol]>*>*       { flex-grow: 1 }    /* sets default to 'fill' for content of H,C,F */
+
+[data-symbol]           { flex-direction: column  } /* a column of 1:N rows */
+[data-symbol]>.header   { align-items: center }
+
+/* styling */
+[data-symbol]           { 
+    text-decoration: none;
+
+    color: currentColor;
+    border: 3px solid rgb(255, 118, 118);
+
+    background-color: #efefef;
+    border-radius: 50%;
+    /* [OPTIONAL], only when using bg color. Make equal to br .header below */
+}
+
+[data-symbol]>.header {
+    padding: .25rem .5rem;
+    text-align: center;
+    border-radius: 50%;
+
+    /* responsive sizes: p1(320,50) p2(1920,180) */
+    width : calc(8.125vmin + 24px);
+    height: calc(8.125vmin + 24px);
+
+    /*
+        responsive fontsize: p1(320,6) p2(1920,20)
+        Whether this works as expected depends on the minimum browser
+        fontsize set by the user (content may overflow .header when set >6px)
+
+        Tested defaults on W10:
+        Edge2020 overflows, while Chrome, Firefox and IE11 do not
+    */
+    font-size: calc(.875vmin + 3.2px)
+}
+
+/**************************************/
+/* Google Material Component inspired */
+/**************************************/
+[icon] {
+    display: inline-flex;
+    justify-content: center; align-content: center; align-items: center;
+
+    /* responsive sizes: p1(320,14) p2(1280,32) */
+    width      : calc(1.875vmin + 8px);
+    height     : calc(1.875vmin + 8px);
+    line-height: calc(1.875vmin + 8px);
+    font-size  : calc(1.875vmin + 8px);
+    /*
+        A bit overdone for just one icon, use inline SVG instead,
+        or create a small (subset) iconfont at https://icomoon.io
+
+        icon list: https://material.io/resources/icons/?style=baseline
+    */
+    font-family: 'Material Icons';
+
+    font-weight: normal; font-style: normal; letter-spacing: normal;
+    text-transform: none; white-space: nowrap; word-wrap: normal;
+
+    opacity: 1; /* GMC uses <1 here and 1 on :hover */
+    font-feature-settings     : 'liga';
+    -moz-osx-font-smoothing   : grayscale;
+}
+
+[clr="0"]       { background-color: Gainsboro; color: black }
+.header,        /* .header here saves coding html */
+[clr="1"]       { background-color: #fefefe; color: #1e1e1e }
+[clr="2"]       { background-color: #1e1e1e; color: Yellow ; font-weight: bolder }
+[clr="3"]       { background-color: #ffcc01; color: #1e1e1e; font-weight: bolder }
+
+/*************************************/
+/* Generic [S]hading and [A]nimation */
+/*************************************/
+/* Element [S]hading custom properties */
+[S] {
+    /* defaults */
+    --clr-shadow: 0 0% 0%; /* HSL Black */
+
+    /* GMD elevation 1dp, d - default + 0.1 */
+    --elevate-d: 0px 2px 1px -1px hsl(var(--clr-shadow) / .20),
+                 0px 1px 1px  0px hsl(var(--clr-shadow) / .14),
+                 0px 1px 3px  0px hsl(var(--clr-shadow) / .12);
+
+    /* when hovered */
+    /* GMD elevation 3dp, h - hovered + 0.1 */
+    --elevate-h: 0px 3px 3px -2px hsl(var(--clr-shadow) / .20),
+                 0px 3px 4px  0px hsl(var(--clr-shadow) / .14),
+                 0px 1px 8px  0px hsl(var(--clr-shadow) / .12);
+}
+
+[S="alt1" i] { /* some alternative shading, just testing */
+    --elevate-d: 0 2px 30px 0 hsl(var(--clr-shadow) / .25);
+    --elevate-h: 0 2px 50px 0 hsl(var(--clr-shadow) / .7);
+}
+
+/* Element [A]nimation custom properties */
+[A] {
+    /* defaults */
+    --clr-inset: 0 0% 0% / 1; /* M3 theme default, black inset as outline (a11y) */
+
+    --a-opa-d  : 1; /* opacity, set to < 1 if you want some default transparency */
+    --a-scale-d: 1; /* scale */
+
+    /* when hovered */
+    --a-opa-h  : 1   ; /* opacity when animated hover */
+    --a-scale-h: 1.02; /* scale when animated and hovered, tweak to your needs */
+
+    --outline-d: inset 0 0 0 2px transparent;           /* default */
+    --outline-h: inset 0 0 0 2px hsl(var(--clr-inset)); /* hover   */
+}
+/* [S]hading and [A]nimation defaults */
+[S]     { box-shadow: var(--elevate-d) }
+[A]     { opacity   : var(--a-opa-d)   }
+[S][A]  { box-shadow: var(--elevate-d), var(--outline-d) }
+
+/* [A]nimation actions */
+[A]:hover { opacity: var(--a-opa-h); transform: scale(var(--a-scale-h)); text-shadow: none }
+
+[A]:active:not(:focus), [A]:focus       { transform: scale(var(--a-scale-d)) }
+
+/* [S]hading actions, but only when [A]nimated */
+[S][A]:hover                            { box-shadow: var(--elevate-h) }
+[S][A]:active:not(:focus), [S][A]:focus { box-shadow: var(--elevate-d), var(--outline-h) }
+
+[S][A]:active:not(:focus) header,
+[S][A]:active:not(:focus) footer { 
+    box-shadow: var(--outline-h);
+} /* outline only, no shadow below/above */
+
+/************************************************/
+/* HTML CURSOR OVERRIDES               [STABLE] */
+/************************************************/
+body  { cursor: default } /* plain arrow for everything, but */
+input { cursor: auto    } /* use HTML default cursor on inputs, unless: */
+
+input:is([list="datalist"],
+         [type="button"  ],
+         [type="checkbox"],
+         [type="radio"   ],
+         [type="color"   ],
+         [type="range"   ],
+         [type="reset"   ],
+         [type="file"    ],
+         [type="submit"  ]),
+label:not([for=""]),
+a,button,select,keygen   { cursor: pointer }
+[contenteditable="true"] { cursor: text    }

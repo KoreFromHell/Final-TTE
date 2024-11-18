@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+</head>
+
+<style>
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: rgb(209, 41, 41);
+    background: black;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+
+  h1,
+  p {
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #000000;
+  }
+
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+
+  input,
+  textarea {
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    border: 1px solid linear-gradient(to right, #00093c, #2d0b00);
+    color: #ffffff;
+  }
+
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: rgb(152, 50, 50);
+    border-color: white;
+    min-width: 300px;
+    border-radius: 30px;
+  }
+
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+
+  .footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #830400;
+    text-align: center;
+  }
+
+  .footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+  }
+</style>
+
+<body>
+  <h1>Inquiry Form</h1>
+  <div class="line"></div>
+  <p>Please fill out this form with the required information</p>
+  <form action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+      <label>Enter Your First Name: <input type="text" name="first-name" placeholder="Your First Name"
+          required /></label>
+      <label>Enter Your Last Name: <input type="text" name="last-name" placeholder="Your Last Name" required /></label>
+      <label>Enter Your Contact Number: <input type="email" name="email" placeholder="Your Contact Number"
+          required /></label>
+      <label for="exampleDataList" class="form-label">Nature of the event: </label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+      <datalist id="datalistOptions">
+        <option value="Business">
+        <option value="Birthday">
+        <option value="Anniversary">
+        <option value="Others">
+      </datalist>
+      <label>Number of People: <input type="text" name="number-of-people" placeholder="Only Number" required /></label>
+    </fieldset>
+    <fieldset>
+      <label>How did you hear about us?
+        <select name="referrer">
+          <option value="">(select one)</option>
+          <option value="1">Social Media</option>
+          <option value="2">Website</option>
+          <option value="3">Your relative</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+      <label>Details about your requests:
+        <textarea name="your requests" rows="3" cols="30" placeholder="I would like to prefer..."></textarea>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>
+        <input type="checkbox" name="terms" class="inline" required /> I accept the <a
+          href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit" />
+  </form>
+  <section class="footer">
+    <p>123 Fifth Avenue, NY 10160, NewYork, USA | Phone: 800-123-456 | Email: ttenyc@gmail.com</p>
+    <p>Copyright &copy 2024 - All Rights Reserved</p>
+  </section>
+</body>
+
+</html>

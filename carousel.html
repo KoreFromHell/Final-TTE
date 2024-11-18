@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the art of mixology, wine culture, and all things bar-related. From cocktail recipes to wine pairing tips and bar etiquette, our website is your go-to destination for everything about drinks and hosting. Cheers to great times!">
+    <meta name="keywords" content="bar, wiskey, wine , alcohol ">
+    <meta name="author" content="EGG CODE">
+    <link rel="icon" type="image/jpg" href="imagess/favicon1.jpg">
+  <title>carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footerStyle.css">
+  <link rel="stylesheet" href="crs.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">TISPY TOPSY EGGY</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="AboutUs.html">About US</a></li>
+        <li><button class="BAT"><a href="reservation.html">Book A Table</a></button></li>
+      </ul>
+      
+       <!-- Hamburger icon for mobile view -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    </nav>
+   
+  </div>
+
+  
+<script>
+      function toggleMenu() {
+          const navbar = document.querySelector('.navbar');
+          const hamburgerIcon = document.querySelector('.hamburger i');
+
+          navbar.classList.toggle('active');
+
+          if (navbar.classList.contains('active')) {
+              hamburgerIcon.classList.remove('fa-bars');
+              hamburgerIcon.classList.add('fa-times');
+          } else {
+              hamburgerIcon.classList.remove('fa-times');
+              hamburgerIcon.classList.add('fa-bars');
+          }
+      }
+</script>
+
+
+
+</header> 
+  
+  
+  <article>
+    <div class="inter">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Brain2.jpeg" class="card-img-top" alt="BR" >
+              <div class="card-body">
+                <p class="card-text">Hello! I'm <strong>Ouu Nhaout</strong>, the CEO of Tipsy Topsy Eggy. I’m dedicated to leading our team in delivering unforgettable dining experiences every day.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/DKSN2.jpeg" class="card-img-top" alt="DK">
+              <div class="card-body">
+                <p class="card-text">Hello! I’m <strong>DKSN</strong>, the COO of Tipsy Topsy Eggy. I’m focused on keeping everything running smoothly behind the scenes to ensure a seamless experience for our guests.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Nora2.jpeg" class="card-img-top" alt="NR">
+              <div class="card-body">
+                <p class="card-text">Hello! I'm <strong>Nora</strong>, the general manager of Tipsy Topsy Eggy. I’m passionate about creating a welcoming space where good food and great company come together.</p>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Main2.jpeg" class="card-img-top" alt="M2">
+              <div class="card-body">
+                <p class="card-text">Hi! I’m <strong>Main</strong>, the Assistant Manager at Tipsy Topsy Eggy. I’m here to support our team and help create a memorable experience for every guest.</p>
+    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Kore2.jpeg" class="card-img-top" alt="K2">
+              <div class="card-body">
+                <p class="card-text">Hi! I’m <strong>Kore</strong>, the HR Manager at Tipsy Topsy Eggy. I’m passionate about building a team that feels like family and fostering a positive work environment.</p>
+    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Zett2.jpeg" class="card-img-top" alt="Z2">
+              <div class="card-body">
+                <p class="card-text">Hello! I’m <strong>Zett</strong>, the F&B Manager at Tipsy Topsy Eggy. My goal is to craft an exceptional menu that pairs delicious food with the perfect drinks.</p>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/FE2.jpeg" class="card-img-top" alt="FE2">
+              <div class="card-body">
+                <p class="card-text">Hello! I’m <strong>Fried Egg</strong>, the IT Manager at Tipsy Topsy Eggy. I ensure our tech runs like clockwork to keep your experience smooth and hassle-free.</p>
+    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Ruto2.jpeg" class="card-img-top" alt="RT2">
+              <div class="card-body">
+                <p class="card-text">Hi! I’m <strong>Ruto</strong>, the Finance and Accounting Manager for Tipsy Topsy Eggy. I handle the numbers so the team can focus on serving up unforgettable experiences.</p>
+    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Day2.jpeg" class="card-img-top" alt="D2">
+              <div class="card-body">
+                <p class="card-text">Hi there! I’m <strong>Day</strong>, the Marketing & Event Manager for Tipsy Topsy Eggy. I bring the buzz, making sure every event we host is as vibrant as our menu.</p>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Ruby2.jpeg" class="card-img-top" alt="RB2">
+              <div class="card-body">
+                <p>Hey! I’m <strong>Ruby</strong>, the Senior Chef at Tipsy Topsy Eggy. I love creating dishes that not only taste amazing but also bring people together.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Bora2.jpeg" class="card-img-top" alt="BO2">
+              <div class="card-body">
+                <p class="card-text">Hello! I’m <strong>Bora</strong>, the Production Executive at Tipsy Topsy Eggy. I’m committed to ensuring every dish meets our high standards of quality and taste.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="AUimage/Do2.jpeg" class="card-img-top" alt="DO2">
+              <div class="card-body">
+                <p class="card-text">Hey! I’m <strong>Do Do</strong>, Production Executive at Tipsy Topsy Eggy. I oversee multiple operations to maintain consistency and excellence across the board.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    </div>
+    
+  </article>
+  <section>
+    <div class="cer">
+     
+      <img src="AUimage/Certificate.png" alt="Oc">
+  
+    </div>
+  
+  </section>
+  <div class="foot">
+    <footer>
+      <div class="row">
+          <div class="col">
+            <p>
+              TIPSY TOPSY EGGY
+            </p>
+            <pre>
+              Welcome to the TIPSY TOPSY EGGY.
+              Make Moments, Live Your Life
+              sip, sip, Hooray
+              Let the Good Times Roll.
+              Memories that Last a Lifetime.
+            </pre>
+          </div>
+          <div class="col">
+            
+            <ul>
+              <li><a href="https://www.drinkaware.co.uk/">WWW.DRINKAWARE.CO.UK</a></li>
+              <li><a href="privacypolicy.html">PRIVACY POLICY</a></li>
+              <li><a href="cookiepolicy.html">COOKIE POLICY</a></li>
+              <li><a href="terms&conditions">TERMS&CONDITIONS</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <a href="contactus.html">CONTACT US</a>
+            <form>
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="enter your email" required>
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <h4 class="social-updates">SOCIAL UPDATES</h4>
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        
+      </div>
+      <hr>
+      <h3 class="copyright">TIPSY TOPSY &copy 2024 - All Rights Reserved</h3>
+  
+    </footer>
+</body>
+</html>
