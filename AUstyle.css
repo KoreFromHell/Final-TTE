@@ -1,28 +1,25 @@
- *{
-  margin: 0;
+*{
+   
   padding: 0;
-} 
-/* nav.navbar{
-    background: linear-gradient(to right, #28282b, #1d0a04);
-height: 50px;
-}   */
+  margin: 0;
+ 
+}
+body{
+  background: #000000;  
+  background: -webkit-linear-gradient(to right, #2a2b2c, #000000); 
+  background: linear-gradient(to right, #2a2b2c, #000000);
+
+}
     
       header{
-        /* background: #1e1e1e;  
-        background: -webkit-linear-gradient(to right, #190A05, #1e1e1e);  
-        background: linear-gradient(to right, #190A05, #1e1e1e);   */
-        background: #232526;  
-        background: -webkit-linear-gradient(to right, #2a2b2c, #000000); 
-        background: linear-gradient(to right, #2a2b2c, #000000);
-          text-align: center;
-          height:330px;
-          padding-top: 0%;
-          margin: 0;
+          
+          height:auto;
           
       }
     
      .head{
         padding-top: 20px;
+        text-align: center;
       } 
       .head img{
         width: 320px;
@@ -66,9 +63,6 @@ height: 50px;
     
     article{
       display: block;
-      background: #232526;  
-        background: -webkit-linear-gradient(to right, #2a2b2c, #000000); 
-        background: linear-gradient(to right, #2a2b2c, #000000); 
 
     }
       .card{
@@ -168,9 +162,6 @@ height: 50px;
        
         padding: 35px 0px 0px 0px;
         height: auto;
-        background: #232526;  
-        background: -webkit-linear-gradient(to right, #2a2b2c, #000000); 
-        background: linear-gradient(to right, #2a2b2c, #000000);
       }
         section h2{
         color: wheat;

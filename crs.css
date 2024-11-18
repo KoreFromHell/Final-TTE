@@ -1,0 +1,58 @@
+
+.card{
+    background-color: rgb(27, 22, 22);
+    margin: 50px 40px 70px 150px;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    float: left;
+    transition: transform 0.5s;
+    z-index: 1;
+  position: relative;
+  border: solid 2px white;
+  }
+  .card:hover{
+    transform: scale(1.15);
+    z-index: 10;
+  }
+  .card-body p{
+    color: white;
+    text-align: justify;
+  }
+  body{
+    background-color: rgb(3, 3, 3);
+  }
+
+
+.card img{
+  opacity: 100%;
+  height: 300px;
+  border: 2px solid white;
+  border-radius: 50%;
+  
+}
+
+.cer img{
+width: 80%;
+height: auto;
+margin: 50px 10% 50px 10%;
+
+}
+
+@media (max-width: 768px) {
+.card{
+flex-direction: column;
+width: 80%;
+margin: 20px 20px 30px 20px;
+transition: none;
+z-index: 0;
+
+}
+.card:hover{
+    transform: none;
+   
+  }
+}
+.inter{
+margin-top: 60px;
+}
