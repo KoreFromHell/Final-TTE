@@ -8,10 +8,11 @@
 }
 h1{
     text-align: center;
+    font-size: 25px;
 }
 .a{
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
 }
 .TT{
     width: 60%;
@@ -26,7 +27,7 @@ p{
 .TT h1{
     text-align: left;
     padding-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .TT ul li{
     letter-spacing: 1px;

@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
+    
 }
 /*NAV BAR START */
 
@@ -20,7 +21,7 @@
 .logo{
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    
     letter-spacing: 1px;
     cursor: pointer;
 }
@@ -385,6 +386,8 @@ button a:hover{
 h1{
   
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
 
 }
 .title{
