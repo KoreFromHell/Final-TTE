@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the art of mixology, wine culture, and all things bar-related. From cocktail recipes to wine pairing tips and bar etiquette, our website is your go-to destination for everything about drinks and hosting. Cheers to great times!">
-    <meta name="keywords" content="bar, wiskey, wine , alcohol ">
-    <meta name="author" content="EGG CODE">
-    <link rel="icon" type="image/jpg" href="imagess/favicon1.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Tipsy Topsy Eggy, your go-to bar for craft cocktails, great vibes, and a memorable experience. Explore our menu, book a table, and more!"
+    />
+
+    <meta property="og:title" content="Discover Mixology & Bar Tips" />
+    <meta
+      property="og:description"
+      content="Explore mixology, wine pairing tips, and bar secrets."
+    />
+    <meta property="og:image" content="URL_TO_IMAGE" />
+    <meta
+      property="og:url"
+      content="https://tipsy-topsy-eggy-hbbp.onrender.com"
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/jpg" href="imagess/favicon1.jpg" />
+    <link rel="canonical" href="https://tipsy-topsy-eggy-hbbp.onrender.com/" />
+
     <title>Products</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="Bartool Sets.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<header>
-           
-  <div class="navbar">
-    <div class="logo">
-      <a href="index.html">TISPY TOPSY EGGY</a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="reservation.html">Reservation</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="review.html">Review</a></li>
-        <li><a href="AboutUs.html">About US</a></li>
-        <li><button class="BAT"><a href="package.html">Book A Table</a></button></li>
-      </ul>
-      
-       <!-- Hamburger icon for mobile view -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <i class="fas fa-bars"></i>
-    </div>
-    
-    </nav>
-   
-  </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="Bartool Sets.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">TISPY TOPSY EGGY</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="AboutUs.html">About US</a></li>
+            <li>
+              <button class="BAT">
+                <a href="package.html">Book A Table</a>
+              </button>
+            </li>
+          </ul>
 
-  
-<script>
-      function toggleMenu() {
-          const navbar = document.querySelector('.navbar');
-          const hamburgerIcon = document.querySelector('.hamburger i');
+          <!-- Hamburger icon for mobile view -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
 
-          navbar.classList.toggle('active');
+      <script>
+        function toggleMenu() {
+          const navbar = document.querySelector(".navbar");
+          const hamburgerIcon = document.querySelector(".hamburger i");
 
-          if (navbar.classList.contains('active')) {
-              hamburgerIcon.classList.remove('fa-bars');
-              hamburgerIcon.classList.add('fa-times');
+          navbar.classList.toggle("active");
+
+          if (navbar.classList.contains("active")) {
+            hamburgerIcon.classList.remove("fa-bars");
+            hamburgerIcon.classList.add("fa-times");
           } else {
-              hamburgerIcon.classList.remove('fa-times');
-              hamburgerIcon.classList.add('fa-bars');
+            hamburgerIcon.classList.remove("fa-times");
+            hamburgerIcon.classList.add("fa-bars");
           }
-      }
-</script>
-              <!-- <div class="content">
+        }
+      </script>
+      <!-- <div class="content">
                 <h1>Welcome</h1>
                 <h3>“Cool Friends, Cool Drinks, Cool Vibes.”</h3>
               </div>
@@ -71,159 +99,413 @@
               </div>
             </div>
           </div> -->
+    </header>
+    <br />
 
-</header>
-<br>
-
-
-      <div>
-        <h3 style="text-align: center; color:rgb(231, 135, 135) ;">_ Here are Bartool Sets _</h3>
-      </div>
+    <div>
+      <h3 style="text-align: center; color: rgb(231, 135, 135)">
+        _ Here are Bartool Sets _
+      </h3>
+    </div>
 
     <!--trending-wine-products-section -->
 
-<div class="Products">
-  <div class="row">
-    <div class="card bg-black text-white" style="width: 300px;">
-      <img class="card-img-top" src="p-images/13.jpg" alt="Card image">
-        <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-1" </h4>
-        <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $149.99  </p>
-        <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-  </div>
-
-  <div class="card bg-black text-white" style="width: 300px;">
-    <img class="card-img-top" src="p-images/12.jpg" alt="Card image">
-      <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-2" </h4>
-      <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $139.99  </p>
-      <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-</div>
-
-<div class="card bg-black text-white" style="width: 300px;">
-  <img class="card-img-top" src="p-images/11.jpg" alt="Card image">
-    <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-3" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $140.99  </p>
-    <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-</div>
-
-<div class="card bg-black text-white" style="width: 300px;">
-  <img class="card-img-top" src="p-images/14.jpg" alt="Card image">
-    <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-4" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price :$153.99  </p>
-    <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-</div>
-
-  <div class="card bg-black text-white" style="width: 300px;">
-    <img class="card-img-top" src="p-images/3.jpg" alt="Card image">
-      <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-5" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $150.99  </p>
-  <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-  </div>
-  
-  <div class="card bg-black text-white" style="width: 300px;">
-    <img class="card-img-top" src="p-images/4.jpg" alt="Card image">
-      <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-6" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $220.55   </p>
-  <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-  </div>
-  
-  <div class="card bg-black text-white" style="width: 300px;">
-    <img class="card-img-top" src="p-images/8.jpg" alt="Card image">
-      <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-7" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $150   </p>
-  <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-  </div>
-  
-  <div class="card bg-black text-white" style="width: 300px;">
-    <img class="card-img-top" src="p-images/9.jpg" alt="Card image">
-      <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-8" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $140  </p>
-  <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-  </div>
-  
-  <div class="card bg-black text-white" style="width: 300px;">
-    <img class="card-img-top" src="p-images/6.jpg" alt="Card image">
-      <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-9" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $230  </p>
-  <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-  </div>
-  
-  <div class="card bg-black text-white" style="width: 300px;">
-    <img class="card-img-top" src="p-images/10.jpg" alt="Card image">
-      <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-10" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $150  </p>
-  <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-  </div>
-
-  <div class="card bg-black text-white" style="width: 300px;">
-    <img class="card-img-top" src="p-images/16.jpg" alt="Card image">
-      <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-11" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $250 </p>
-  <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-  </div>
-  
-  <div class="card bg-black text-white" style="width: 300px;">
-    <img class="card-img-top" src="p-images/17.jpg" alt="Card image">
-      <h4 class="card-title" style="font-style: inherit; font-weight: bold; text-align: center;color:rgb(231, 135, 135) ;" >"Set-12" </h4>
-    <p class="card-text" style="font-style: inherit; font-size: smaller; text-align: center;color:rgb(231, 135, 135) ;">Price : $280   </p>
-    <a href="html/Order-form.html" class="btn btn-primary">Order Now</a>
-  </div>
-
-  </div>
-</div>
-<br>
-
-<p style="text-align: center;font-size: large;color:rgb(231, 135, 135) ;font-size: x-large;font-style: oblique;">
-    _ A complete bar in one set: "Our bartool sets offer everything you need to mix up your favorite cocktails with ease."
-</p>
-<p style="text-align: center;font-size: large;color:rgb(231, 135, 135) ;font-size: x-large;font-style: oblique;">  
-    _ Mix it up: "Get creative with our versatile bartool sets, perfect for bartenders and home enthusiasts alike."
-</p>
-
-<!--section footer starts---->
-<div class="foot">
-  <footer>
-    <div class="row">
-        <div class="col">
-          <p>
-            TIPSY TOPSY EGGY
+    <div class="Products">
+      <div class="row">
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/13.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-1"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $149.99
           </p>
-          <pre>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/12.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-2"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $139.99
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/11.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-3"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $140.99
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/14.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-4"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price :$153.99
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/3.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-5"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $150.99
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/4.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-6"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $220.55
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/8.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-7"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $150
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/9.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-8"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $140
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/6.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-9"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $230
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/10.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-10"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $150
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/16.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-11"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $250
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <div class="card bg-black text-white" style="width: 300px">
+          <img class="card-img-top" src="p-images/17.jpg" alt="Card image" />
+          <h4
+            class="card-title"
+            style="
+              font-style: inherit;
+              font-weight: bold;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            "Set-12"
+          </h4>
+          <p
+            class="card-text"
+            style="
+              font-style: inherit;
+              font-size: smaller;
+              text-align: center;
+              color: rgb(231, 135, 135);
+            "
+          >
+            Price : $280
+          </p>
+          <a href="Order-form.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <p
+      style="
+        text-align: center;
+        font-size: large;
+        color: rgb(231, 135, 135);
+        font-size: x-large;
+        font-style: oblique;
+      "
+    >
+      _ A complete bar in one set: "Our bartool sets offer everything you need
+      to mix up your favorite cocktails with ease."
+    </p>
+    <p
+      style="
+        text-align: center;
+        font-size: large;
+        color: rgb(231, 135, 135);
+        font-size: x-large;
+        font-style: oblique;
+      "
+    >
+      _ Mix it up: "Get creative with our versatile bartool sets, perfect for
+      bartenders and home enthusiasts alike."
+    </p>
+
+    <!--section footer starts---->
+    <div class="foot">
+      <footer>
+        <div class="row">
+          <div class="col">
+            <p>TIPSY TOPSY EGGY</p>
+            <pre>
             Welcome to the TIPSY TOPSY EGGY.
             Make Moments, Live Your Life
             sip, sip, Hooray
             Let the Good Times Roll.
             Memories that Last a Lifetime.
-          </pre>
-        </div>
-        <div class="col">
-          
-            <p><a href="https://www.drinkaware.co.uk/">WWW.DRINKAWARE.CO.UK</a></p>
+          </pre
+            >
+          </div>
+          <div class="col">
+            <p>
+              <a href="https://www.drinkaware.co.uk/">WWW.DRINKAWARE.CO.UK</a>
+            </p>
             <p><a href="privacypolicy.html">PRIVACY POLICY</a></p>
             <p><a href="cookiepolicy.html">COOKIE POLICY</a></p>
             <p><a href="terms&conditions">TERMS&CONDITIONS</a></p>
-        </div>
-        <div class="col">
-          <a href="contactus.html">CONTACT US</a>
-          <form>
-            <i class="far fa-envelope"></i>
-            <input type="email" placeholder="enter your email" required>
-            <button type="submit"><i class="fas fa-arrow-right"></i></button>
-          </form>
-          <h4 class="social-updates">SOCIAL UPDATES</h4>
-          <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
+          </div>
+          <div class="col">
+            <a href="contactus.html">CONTACT US</a>
+            <form>
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="enter your email" required />
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <h4 class="social-updates">SOCIAL UPDATES</h4>
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
           </div>
         </div>
-      
+        <hr />
+        <h3 class="copyright">TIPSY TOPSY &copy 2024 - All Rights Reserved</h3>
+      </footer>
     </div>
-    <hr>
-    <h3 class="copyright">TIPSY TOPSY &copy 2024 - All Rights Reserved</h3>
-
-  </footer>
-</div>
-
-</body>
+  </body>
 </html>

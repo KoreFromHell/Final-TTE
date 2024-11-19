@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Tipsy Topsy Eggy, your go-to bar for craft cocktails, great vibes, and a memorable experience. Explore our menu, book a table, and more!"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:title" content="Discover Mixology & Bar Tips" />
+    <meta
+      property="og:description"
+      content="Explore mixology, wine pairing tips, and bar secrets."
+    />
+    <meta property="og:image" content="URL_TO_IMAGE" />
+    <meta
+      property="og:url"
+      content="https://tipsy-topsy-eggy-hbbp.onrender.com"
+    />
+    <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="./styles/style1.css">
-</head>
+    <title>Reservation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="canonical" href="https://tipsy-topsy-eggy-hbbp.onrender.com/" />
 
-<!-- ============  Nav Bar Start ===============  -->
+    <link rel="stylesheet" href="./styles/style1.css" />
+  </head>
 
-<body onload="slider()">
+  <!-- ============  Nav Bar Start ===============  -->
+
+  <body onload="slider()">
     <div class="banner">
-        <div class="slider">
-            <img src="https://cdn.tatlerasia.com/tatlerasia/i/2023/12/08104921-259076589-2911822299067010-3020013091245193937-n_cover_1600x974.jpg"
-                id="slideImg">
+      <div class="slider">
+        <img
+          src="https://cdn.tatlerasia.com/tatlerasia/i/2023/12/08104921-259076589-2911822299067010-3020013091245193937-n_cover_1600x974.jpg"
+          id="slideImg"
+        />
+      </div>
+      <div class="overlay">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">TISPY TOPSY EGGY</a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="./pages/signup.html">Reservation</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="review.html">Review</a></li>
+              <li><a href="AboutUs.html">About US</a></li>
+            </ul>
+          </nav>
+          <button><a href="package.html">Book A Table</a></button>
         </div>
-        <div class="overlay">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html">TISPY TOPSY EGGY</a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="./pages/signup.html">Reservation</a></li>
-                        <li><a href="product.html">Product</a></li>
-                        <li><a href="review.html">Review</a></li>
-                        <li><a href="AboutUs.html">About US</a></li>
-                    </ul>
-                </nav>
-                <button><a href="package.html">Book A Table</a></button>
-
-            </div>
-            <div class="content">
-                <h1>Welcome</h1>
-                <h3>“Reserve and Enjoy the best vibe”</h3>
-            </div>
-            <div class="openinghours">
-                <h2>Opening hours</h2>
-                <p>14:00<sup>pm</sup> to
-                    4:00<sup>pm</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4:00<sup>am</sup>
-                    to 7:00<sup>am</sup></p>
-
-            </div>
+        <div class="content">
+          <h1>Welcome</h1>
+          <h3>“Reserve and Enjoy the best vibe”</h3>
         </div>
+        <div class="openinghours">
+          <h2>Opening hours</h2>
+          <p>
+            14:00<sup>pm</sup> to
+            4:00<sup>pm</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4:00<sup
+              >am</sup
+            >
+            to 7:00<sup>am</sup>
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- ============  Nav Bar End ===============  -->
@@ -58,35 +83,35 @@
     <!-- ============  Packages Section Start ===============  -->
 
     <div class="container">
-        <h1 class="container_title">Our Packages</h1>
-        <div class="card__container">
-            <article class="card__article">
-                <img src="./imgs/pack1.jpg" alt="No image" class="card__img">
-                <div class="card__data">
-                    <span class="card__description">Gold Package</span>
-                    <h2 class="card__title">Disco Hall</h2>
-                    <a href="package.html" class="card__button">Read More</a>
-                </div>
-            </article>
-            <article class="card__article">
-                <img src="./imgs/pack2.jpg" alt="No image" class="card__img">
+      <h1 class="container_title">Our Packages</h1>
+      <div class="card__container">
+        <article class="card__article">
+          <img src="./imgs/pack1.jpg" alt="No image" class="card__img" />
+          <div class="card__data">
+            <span class="card__description">Gold Package</span>
+            <h2 class="card__title">Disco Hall</h2>
+            <a href="package.html" class="card__button">Read More</a>
+          </div>
+        </article>
+        <article class="card__article">
+          <img src="./imgs/pack2.jpg" alt="No image" class="card__img" />
 
-                <div class="card__data">
-                    <span class="card__description">Diamond Package</span>
-                    <h2 class="card__title">Celebrations Hall</h2>
-                    <a href="package.html" class="card__button">Read More</a>
-                </div>
-            </article>
-            <article class="card__article">
-                <img src="./imgs/pack3.jpg" alt="No image" class="card__img">
+          <div class="card__data">
+            <span class="card__description">Diamond Package</span>
+            <h2 class="card__title">Celebrations Hall</h2>
+            <a href="package.html" class="card__button">Read More</a>
+          </div>
+        </article>
+        <article class="card__article">
+          <img src="./imgs/pack3.jpg" alt="No image" class="card__img" />
 
-                <div class="card__data">
-                    <span class="card__description">Preminum Package</span>
-                    <h2 class="card__title">Private Hall</h2>
-                    <a href="package.html" class="card__button">Read More</a>
-                </div>
-            </article>
-            <!-- <article class="card__article">
+          <div class="card__data">
+            <span class="card__description">Preminum Package</span>
+            <h2 class="card__title">Private Hall</h2>
+            <a href="package.html" class="card__button">Read More</a>
+          </div>
+        </article>
+        <!-- <article class="card__article">
                 <img src="./imgs/pack1.jpg" alt="No image" class="card__img">
                 <div class="card__data">
                     <span class="card__description">Gold Package</span>
@@ -112,7 +137,7 @@
                     <a href="package.html" class="card__button">Read More</a>
                 </div>
             </article> -->
-        </div>
+      </div>
     </div>
 
     <!-- ============  Packages Section End ===============  -->
@@ -120,27 +145,28 @@
     <!-- ============  Explore Section Start ===============  -->
 
     <section class="explore">
-        <div class="explore-content">
-            <h1>"Turning Moments Into Memories"</h1>
-            <p> Welcome to our exclusive bar, where we offer tailored experiences through our Gold, Diamond, and Premium
-                packages.
-                Whether you're hosting an intimate gathering in our Disco Hall or a grand celebration in our
-                Celebrations Hall,
-                we provide the perfect setting for family events, parties, business functions, and more. With pricing
-                starting
-                from $1,000 for the Gold package and luxury options available in our Premium package, we cater to all
-                occasions.
-                Our royal customers enjoy 30%-50% discounts with membership, ensuring an unforgettable experience every
-                time.
-                Let us help you create your ideal event with personalized service and exceptional offerings.</p>
-            <div class="box">
-                <h2>Hours of Operation</h2>
-                <p>Monday - Thursday: 12:00pm to 12:00am</p>
-                <p>Friday: 12:00pm to 2:00am</p>
-                <p>Saturday: 11:00am to 2:00am</p>
-                <p>Sunday: 11:00am to 12:00am</p>
-            </div>
+      <div class="explore-content">
+        <h1>"Turning Moments Into Memories"</h1>
+        <p>
+          Welcome to our exclusive bar, where we offer tailored experiences
+          through our Gold, Diamond, and Premium packages. Whether you're
+          hosting an intimate gathering in our Disco Hall or a grand celebration
+          in our Celebrations Hall, we provide the perfect setting for family
+          events, parties, business functions, and more. With pricing starting
+          from $1,000 for the Gold package and luxury options available in our
+          Premium package, we cater to all occasions. Our royal customers enjoy
+          30%-50% discounts with membership, ensuring an unforgettable
+          experience every time. Let us help you create your ideal event with
+          personalized service and exceptional offerings.
+        </p>
+        <div class="box">
+          <h2>Hours of Operation</h2>
+          <p>Monday - Thursday: 12:00pm to 12:00am</p>
+          <p>Friday: 12:00pm to 2:00am</p>
+          <p>Saturday: 11:00am to 2:00am</p>
+          <p>Sunday: 11:00am to 12:00am</p>
         </div>
+      </div>
     </section>
 
     <!-- ============  Explore Section End ===============  -->
@@ -148,24 +174,25 @@
     <!-- ============  Tour Section Start ===============  -->
 
     <section class="tours">
-        <div class="row">
-            <div class="image-col">
-                <div class="image-gallery">
-                    <img src="./imgs/img 5.jpg" alt="No Image">
-                    <img src="./imgs/img 2.jpg" alt="No Image">
-                    <img src="./imgs/img 3.jpg" alt="No Image">
-                    <img src="./imgs/img 1.jpg" alt="No Image">
-                </div>
-                
-            </div>
-            <div class="content-col">
-                <h1>Welcome to Our Bar Gallery</h1>
-                <p> Step into a world where sophistication meets comfort, and every evening becomes an unforgettable
-                    experience. Our thoughtfully designed space combines modern elegance with warm, intimate
-                    atmospheres, creating the perfect setting for any occasion.
-                </p>
-            </div>
+      <div class="row">
+        <div class="image-col">
+          <div class="image-gallery">
+            <img src="./imgs/img 5.jpg" alt="No Image" />
+            <img src="./imgs/img 2.jpg" alt="No Image" />
+            <img src="./imgs/img 3.jpg" alt="No Image" />
+            <img src="./imgs/img 1.jpg" alt="No Image" />
+          </div>
         </div>
+        <div class="content-col">
+          <h1>Welcome to Our Bar Gallery</h1>
+          <p>
+            Step into a world where sophistication meets comfort, and every
+            evening becomes an unforgettable experience. Our thoughtfully
+            designed space combines modern elegance with warm, intimate
+            atmospheres, creating the perfect setting for any occasion.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- ============  Tour Section End ===============  -->
@@ -173,95 +200,89 @@
     <!-- ============  Location Section Start ===============  -->
 
     <section id="location" class="location-section">
-        <div class="map-container">
-            <!-- Map Iframe -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247083.05822285515!2d-73.6872868!3d40.7204529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3b24b424f%3A0x618680d3f8c2f773!2s123%205th%20Ave%2C%20New%20York%2C%20NY%2010003%2C%20USA!5e1!3m2!1sen!2sth!4v1728491576783!5m2!1sen!2sth"
-                class="map-iframe"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>          
-        </div>
+      <div class="map-container">
+        <!-- Map Iframe -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247083.05822285515!2d-73.6872868!3d40.7204529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3b24b424f%3A0x618680d3f8c2f773!2s123%205th%20Ave%2C%20New%20York%2C%20NY%2010003%2C%20USA!5e1!3m2!1sen!2sth!4v1728491576783!5m2!1sen!2sth"
+          class="map-iframe"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
     </section>
-    
-   <!-- ============  Location Section End ===============  -->
+
+    <!-- ============  Location Section End ===============  -->
 
     <!-- ============  Footer Section Start ===============  -->
 
     <div class="foot">
-        <footer>
-            <div class="row">
-                <div class="col">
-                    <p>
-                        TIPSY TOPSY EGGY
-                    </p>
-                    <pre>
+      <footer>
+        <div class="row">
+          <div class="col">
+            <p>TIPSY TOPSY EGGY</p>
+            <pre>
                   Welcome to the TIPSY TOPSY EGGY.
                   Make Moments, Live Your Life
                   sip, sip, Hooray
                   Let the Good Times Roll.
                   Memories that Last a Lifetime.
-                </pre>
-                </div>
-                <div class="col">
-
-                    <ul>
-                        <li><a href="https://www.drinkaware.co.uk/">WWW.DRINKAWARE.CO.UK</a></li>
-                        <li><a href="privacypolicy.html">PRIVACY POLICY</a></li>
-                        <li><a href="cookiepolicy.html">COOKIE POLICY</a></li>
-                        <li><a href="terms&conditions">TERMS&CONDITIONS</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <a href="contactus.html">CONTACT US</a>
-                    <form>
-                        <i class="far fa-envelope"></i>
-                        <input type="email" placeholder="enter your email" required>
-                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                    </form>
-                    <h4 class="social-updates">SOCIAL UPDATES</h4>
-                    <div class="social-icons">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-youtube"></i>
-                    </div>
-                </div>
-
+                </pre
+            >
+          </div>
+          <div class="col">
+            <ul>
+              <li>
+                <a href="https://www.drinkaware.co.uk/">WWW.DRINKAWARE.CO.UK</a>
+              </li>
+              <li><a href="privacypolicy.html">PRIVACY POLICY</a></li>
+              <li><a href="cookiepolicy.html">COOKIE POLICY</a></li>
+              <li><a href="terms&conditions">TERMS&CONDITIONS</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <a href="contactus.html">CONTACT US</a>
+            <form>
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="enter your email" required />
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <h4 class="social-updates">SOCIAL UPDATES</h4>
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
             </div>
-            <hr>
-            <h3 class="copyright">TIPSY TOPSY &copy 2024 - All Rights Reserved</h3>
-
-        </footer>
+          </div>
+        </div>
+        <hr />
+        <h3 class="copyright">TIPSY TOPSY &copy 2024 - All Rights Reserved</h3>
+      </footer>
     </div>
 
-    
     <!-- ============  Footer Section End ===============  -->
 
-    
     <!-- ============  JS Code Start ===============  -->
     <script>
-        var slideImg = document.getElementById("slideImg");
-        var images = new Array(
-            "https://residences-decoration.com/wp-content/uploads/2019/06/Le-Rouge-a-Levres_2_photoCEdoua-rd-Auffray-for-Maud-Moureau-15.gif",
-            "https://s3-eu-west-1.amazonaws.com/prod-ecs-service-web-blog-media/2022/09/bar-decor-ideas.jpg",
-            "https://www.luxxu.net/blog/wp-content/uploads/2019/05/Luxury-Game-Room-Design-Ideas-Youll-Love-03.jpg",
-            "https://img.freepik.com/photos-premium/interieur-rouge-boite-nuit-vip-design-luxe-decoration-partie-boisson-bar-restaurant-boite-nuit_870512-4332.jpg"
-        )
-        var len = images.length;
-        var i = 0;
+      var slideImg = document.getElementById("slideImg");
+      var images = new Array(
+        "https://residences-decoration.com/wp-content/uploads/2019/06/Le-Rouge-a-Levres_2_photoCEdoua-rd-Auffray-for-Maud-Moureau-15.gif",
+        "https://s3-eu-west-1.amazonaws.com/prod-ecs-service-web-blog-media/2022/09/bar-decor-ideas.jpg",
+        "https://www.luxxu.net/blog/wp-content/uploads/2019/05/Luxury-Game-Room-Design-Ideas-Youll-Love-03.jpg",
+        "https://img.freepik.com/photos-premium/interieur-rouge-boite-nuit-vip-design-luxe-decoration-partie-boisson-bar-restaurant-boite-nuit_870512-4332.jpg"
+      );
+      var len = images.length;
+      var i = 0;
 
-        function slider() {
-            if (i > len - 1) {
-                i = 0;
-            }
-            slideImg.src = images[i];
-            i++;
-            setTimeout('slider()', 3000);
+      function slider() {
+        if (i > len - 1) {
+          i = 0;
         }
-
+        slideImg.src = images[i];
+        i++;
+        setTimeout("slider()", 3000);
+      }
     </script>
-    
-</body>
-
+  </body>
 </html>

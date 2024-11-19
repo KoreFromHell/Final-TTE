@@ -57,7 +57,7 @@
     display: block;
 }
 .logo{
-    font-size: 20px;
+    font-size: 35px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 1px;
@@ -66,7 +66,7 @@
 .logo a{
     color: rgb(255, 255, 255);
     text-shadow: 3px 4px 4px rgba(255, 0, 0, 0.8);
-    font-size: 25px;
+    font-size: 35px;
 }
 .logo a:hover{
     color:red}
@@ -74,13 +74,13 @@ nav li{
     color: white;
     display: inline-block;
     list-style: none;
-    padding: 0px 15px;
+    padding: 0px 20px;
     position: relative;
     transition: 0.5s;
     background: transparent;
 }
 a,button{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: rgb(231, 135, 135);
     text-decoration: none;
@@ -118,7 +118,7 @@ button a:hover{
 
           
 .content{
-    padding: 100px; 
+    padding: 180px; 
     text-align: center;  
     color:rgb(255, 255, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -146,12 +146,15 @@ button a:hover{
     color: whitesmoke;
     flex: 50%;
     background-color: black;
-    padding: 20px;
+    padding: 40px;
+    line-height: 70px;
+    
   }
   .bar-photo{
     background-color: #000000;
     display: flex;
-    margin-left: 40px;
+    margin-left: 50px;
+    height: 400px;
   }
   .intro h2{
     width: 100%;
@@ -178,11 +181,13 @@ button a:hover{
     flex: 50%;
     background-color: black;
     padding: 20px;
+    line-height: 70px;
   }
   .bar-photo1{
     background-color: #000000;
     display: flex;
     margin-right: 100px;
+    padding-bottom: 50px;
   }
   .intro1 h2{
     width: 80%;
@@ -198,7 +203,7 @@ button a:hover{
     padding: 40px;
     padding-left: 70px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 70px;
     font-size: 25px;
   }
 
@@ -215,6 +220,7 @@ button a:hover{
     background-color: #000000;
     display: flex;
     margin-left: 50px;
+    padding-bottom: 50px;
   }
   .intro2 h2{
     width: 100%;
@@ -227,7 +233,7 @@ button a:hover{
     font-weight: 600;
     padding: 40px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 50px;
     font-size: 25px;
   }
 
@@ -245,6 +251,7 @@ button a:hover{
     background-color: #000000;
     display: flex;
     margin-right: 100px;
+    margin-bottom: 50px;
   }
   .intro3 h2{
     width: 100%;
@@ -276,7 +283,8 @@ button a:hover{
   .menu-photo{
     background-color: #000000;
     display: flex;
-  
+    height: 400px;
+    margin-left: 80px;
   }
   .for-menu h2{
     width: 100%;
@@ -287,6 +295,7 @@ button a:hover{
   .for-menu p{
     font-weight: 600;
     padding-left: 50px;
+    font-size: 25px;
   }
   .menu-button{
     margin-left: 50px;
@@ -302,6 +311,7 @@ button a:hover{
     flex: 50%;
     background-color: black;
     padding: 20px;
+    line-height: 50px;
   }
   .product-img{
     background-color: #000000;
@@ -313,16 +323,19 @@ button a:hover{
     color: white;
     padding: 50px;
     display: flex;
+    padding-left: 170px;
   }
   .for-product p{
     font-weight: 600;
-    padding-left: 70px;
-    width: 70%;
+    padding-left: 170px;
+    width: 90%;
+    font-size: 25px;
+    line-height: 50px;
   }
   .product-button{
-    margin-left: 50px;
+    margin-left: 170px;
     margin-top: 40px;
-  
+    
   }
 
 
@@ -345,15 +358,19 @@ button a:hover{
     color: white;
     padding: 50px;
     display: flex;
+    padding-left: 60px;
+    font-size: 30px;
   }
   .for-reservation p{
     color: white;
     font-weight: 600;
-    padding-left: 50px;
+    padding-left: 60px;
     padding-bottom: 10px;
+    font-size: 25px;
+    line-height: 50px;
   }
   .reservation-button{
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 40px;
   
   }
@@ -376,23 +393,25 @@ button a:hover{
   }
   .row{
     margin: auto;
+    height: auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 25px;
     background: transparent;
   }
   .row p{
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 30px;
     padding: 10px;
     background: transparent;
   }
   .row pre{
     margin-left: 0;
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 10px;
     background: transparent;
+    line-height: 25px;
   }
   .col{
     flex-basis: 25%;
@@ -413,6 +432,7 @@ button a:hover{
     font-family:'poppins', sans-serif;
     background: transparent;
     background: none;
+    line-height: 25px;
   }
   .col ul li a{
     text-decoration: none;
