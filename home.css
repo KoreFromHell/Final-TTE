@@ -284,6 +284,7 @@ button a:hover{
     background-color: #000000;
     display: flex;
     height: 400px;
+    margin-left: 80px;
   }
   .for-menu h2{
     width: 100%;
@@ -392,23 +393,25 @@ button a:hover{
   }
   .row{
     margin: auto;
+    height: auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 25px;
     background: transparent;
   }
   .row p{
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 30px;
     padding: 10px;
     background: transparent;
   }
   .row pre{
     margin-left: 0;
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 10px;
     background: transparent;
+    line-height: 25px;
   }
   .col{
     flex-basis: 25%;
@@ -429,6 +432,7 @@ button a:hover{
     font-family:'poppins', sans-serif;
     background: transparent;
     background: none;
+    line-height: 25px;
   }
   .col ul li a{
     text-decoration: none;
