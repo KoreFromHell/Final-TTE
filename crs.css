@@ -8,8 +8,8 @@
     float: left;
     transition: transform 0.5s;
     z-index: 1;
-  position: relative;
-  border: solid 2px white;
+    position: relative;
+    border: solid 2px white;
   }
   .card:hover{
     transform: scale(1.15);
