@@ -105,6 +105,12 @@ body{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;          
         font-style: italic;
       }
+      .middle button{
+        border: none;
+        background-color: transparent;
+        display: inline;
+        margin: 0%;
+      }
     
       .card {
   display: block;
@@ -114,7 +120,7 @@ body{
   align-items: center;
   color: #190A05;
   
-  transition: transform 0.3s, z-index 0.3s;
+  transition: transform 0.5s, z-index 0.5s;
   z-index: 1;
   position: relative;
   opacity: 70%;

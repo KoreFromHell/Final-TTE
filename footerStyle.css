@@ -138,8 +138,9 @@ hr{
     
 }
 .col pre{overflow: hidden;
-  text-align: center;
-  margin-right: 20px;
+  text-align: center !important;
+  
+left: 30px !important;
   width: 100%;
 }
  
@@ -150,3 +151,4 @@ hr{
     margin-right: 5px;
 }
 }
+
