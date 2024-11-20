@@ -516,9 +516,34 @@ hr{
   header{
       padding-left: 50px;
   }
-
+  .navbar .logo a{
+    font-size: 20px;
+  }
+  .openinghours{
+    font-size: 15px;
+  }
+  img{
+    width: 225px;
+  }
+  h2 p{
+    font-size: 500px;
+  }
+  .bar-photo img{
+    display: inline-flex;
+    padding-left: 0px;
+  }
+  .product-img h2 {
+    padding-left: 50px;
+  }
+  .main1{
+    padding-top: 0px;
+    
+  }
   .list .item .content{
       left: 50px;
+  }
+  .content{
+    font-size: 40px;
   }
 
   .content .title, .content .name{
@@ -535,6 +560,12 @@ hr{
   header nav a{
       font-size: 14px;
       margin-right: 0;
+  }
+  .banner{
+    height: 400px;
+  }
+  img{
+    width: 100px;
   }
 
   .list .item .content{
@@ -563,7 +594,7 @@ hr{
 
 img {
   max-width: 100%;
-  height: auto;
+  
 }
 
 /* Responsive Adjustments */
@@ -583,31 +614,56 @@ img {
 
   /* Content Blocks */
   .bar-photo, .bar-photo1, .bar-photo2, .bar-photo3, .menu-photo, .product-img, .reservation-photo {
-      flex-direction: column;
+      
       align-items: center;
       text-align: center;
   }
 
   /* Text & Button Size */
   .content h1, .content h3, .intro h2, .intro p, .for-menu h2, .for-menu p, .for-product h2, .for-product p {
-      font-size: 1.2rem;
-      padding: 10px;
+      font-size: 20px;
+    
+  }
+  .intro1 h2 p{
+    font-size: 20px;
   }
   .menu-button, .reservation-button {
       font-size: 1rem;
       padding: 10px 20px;
+      margin:auto ;
   }
-
-  /* Carousel */
-  .carousel .list .item {
-      width: 80%;
-      left: 10%;
+  .intro h2{
+    padding: 15px;
   }
-
-  .arrows button {
-      width: 40px;
-      height: 40px;
+  .intro1 h2{
+    font-size: 20px;
+    line-height: 25px;
+    width: 100%;
+    padding: 15px;
   }
+  .intro1 p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .intro2 h2, .intro3 h2{
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .intro2 p, .intro3 p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+ .for-menu h2,.for-product h2 ,.for-reservation h2{
+   font-size: 25px;
+   padding: 50px;
+   line-height: 30px;
+   width: 100%;
+ }
+ .for-menu p, .for-product p,  .for-reservation p {
+  font-size: 20px;
+  padding: 20px;
+  line-height: 20px;
+ }
 }
 
 
@@ -616,17 +672,50 @@ img {
   /* Navigation Links */
   nav li {
       font-size: 14px;
+      
   }
 
   /* Image & Text Blocks */
-  .bar-photo img, .bar-photo1 img, .bar-photo2 img, .bar-photo3 img, .menu-photo img, .product-img img, .reservation-photo img {
-      width: 100%;
-      margin: auto;
+  .bar-photo img, .bar-photo1 img, .bar-photo2 img, .bar-photo3 img, .menu-photo img, .product-photo img , .reservation-photo img {
+    max-height: 200px;
+    width: 150px;
+    text-align: center;
+    padding: 1px;
   }
 
   /* Content Blocks */
   .content, .intro, .intro1, .intro2, .intro3, .for-menu, .for-product, .for-reservation {
       padding: 20px;
+      font-size: 20px;
+  }
+  .intro h2, .intro1 h2 , .intro2 h2, .intro3 h2 {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 1px;
+    width: 100%;
+  }
+  .intro p, .intro1 p, .intro2 p, .intro3 p{
+    font-size: 10px;
+    line-height: 15px;
+    width: 100%;
+    padding: 10px;
+  }
+  .for-menu h2,.for-product h2 ,.for-reservation h2{
+    font-size: 15px;
+    line-height: 20px;
+    padding: 1px;
+    width: 100%;
+  }
+  .for-menu p, .for-product p,  .for-reservation p{
+    font-size: 10px;
+    line-height: 15px;
+    padding: 1px;
+  }
+  .menu-button,.product-button,.reservation-button{
+    padding: 10px;
+  }
+  .menu-button a,.product-button a ,.reservation-button a{
+    font-size: 10px;
   }
 
   /* Footer */
