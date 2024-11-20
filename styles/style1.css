@@ -77,7 +77,7 @@
 .logo a {
     color: rgb(255, 255, 255);
     text-shadow: 3px 4px 4px rgba(255, 0, 0, 0.8);
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .logo a:hover {
@@ -155,7 +155,7 @@ nav li:hover.dropdown ul li {
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 100px;
     text-shadow: 3px 4px 4px rgba(255, 0, 0, 0.8);
 }
 
@@ -165,7 +165,7 @@ nav li:hover.dropdown ul li {
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-size: 10px;
     padding: 25px;
     text-shadow: 3px 4px 4px rgba(255, 0, 0, 0.8);
 }
