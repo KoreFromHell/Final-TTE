@@ -2,7 +2,15 @@
     margin:0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
   
+}
+body{
+  overflow-x: hidden;
+}
+.main,.main1, .main2, .main3, .main5, .main6 , .main7{
+  max-width: 100%;
+  overflow: hidden;
 }
 .banner{
     width: 100%;
@@ -636,6 +644,10 @@ img {
   .navbar {
       flex-direction: column;
   }
+  .main,.main1, .main2, .main3, .main5, .main6 , .main7{
+    max-width: 100%;
+    overflow: hidden;
+  }
   .navbar nav ul {
       flex-direction: column;
       padding: 0;
@@ -706,6 +718,10 @@ img {
   /* Navigation Links */
   nav li {
       font-size: 14px;
+  }
+  .main,.main1, .main2, .main3, .main5, .main6 , .main7{
+    max-width: 100%;
+    overflow: hidden;
   }
 
   /* Image & Text Blocks */
@@ -790,10 +806,20 @@ img {
 
 
   @media screen and (max-width: 400px) {
+    body{
+      overflow-x: hidden;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 100%;
+    }
     .bar-photo img, .bar-photo1 img, .bar-photo2 img, .bar-photo3 img, .reservation-photo img ,.mian6 img {
       max-height: 100px;
       height: 200px;
       width: 200px;
+    }
+    .main,.main1, .main2, .main3, .main5, .main6 , .main7{
+      max-width: 100%;
+      overflow: hidden;
     }
     .for-menu h2{
       font-size: 10px;
@@ -878,6 +904,10 @@ img {
     .menu-button a,.product-button a ,.reservation-button a{
       font-size: 10px;
     }
+    .main,.main1,.main2,.main3,.main5,.main6 , .main7 {
+      overflow-wrap: break-word;
+    }
+
   }
 
 
