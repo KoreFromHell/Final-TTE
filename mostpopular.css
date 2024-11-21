@@ -12,6 +12,12 @@
     border-radius: 10px;
 }
 
+.himage:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 header {
     background-color: black;
     width: 100%;
@@ -188,10 +194,6 @@ button a:hover{
 
 /*RESPONSIVE START */
 @media screen and (max-width: 999px){
-  
-    header{
-        /*padding-left: 50px;*/
-    }
   
     .list .item .content{
         left: 50px;

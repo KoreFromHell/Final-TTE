@@ -13,6 +13,12 @@
     border-radius: 10px;
 }
 
+.himage:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 header {
     background-color: black;
     width: 100%;
@@ -42,11 +48,13 @@ body {
 }
 
 .food-items {
-    background-color: #333;
+    background-color: black;
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .food-items img {
@@ -178,10 +186,6 @@ button a:hover{
 
 /*RESPONSIVE START */
 @media screen and (max-width: 999px){
-  
-    header{
-        /*padding-left: 50px;*/
-    }
   
     .list .item .content{
         left: 50px;
