@@ -10,6 +10,7 @@
     z-index: 1;
     position: relative;
     border: solid 2px white;
+   
   }
   .card:hover{
     transform: scale(1.15);
@@ -42,8 +43,8 @@ margin: 50px 10% 50px 10%;
 @media (max-width: 768px) {
 .card{
 flex-direction: column;
-width: 80%;
-margin: 20px 20px 30px 20px;
+width: 100%;
+margin: 20px 20px 30px 40px;
 transition: none;
 z-index: 0;
 
@@ -56,3 +57,9 @@ z-index: 0;
 .inter{
 margin-top: 60px;
 }
+.carousel-item{
+  flex-shrink: 0;
+    scroll-snap-align: start;
+    overflow-x: auto;
+  }
+  
