@@ -10,10 +10,14 @@
 
 .drinkphotos {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
-    padding: 20px;
-    border-radius: 25px;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 0 0 20px 2px goldenrod;
+    transition: tranform 1s, z-index 1s;
+    z-index: 1;
 }
 
 
@@ -29,6 +33,12 @@
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.himage:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 header {
@@ -131,9 +141,9 @@ button a:hover{
 /*RESPONSIVE START */
 @media screen and (max-width: 999px){
   
-    header{
-        /*padding-left: 50px;*/
-    }
+    /*header{
+        padding-left: 50px;
+    }*/
   
     .list .item .content{
         left: 50px;
@@ -576,4 +586,11 @@ hr{
   .social-icons .fab {
       margin-right: 5px;
   }
+}
+.drinkphotos:hover{
+  transform: scale(1.15);
+  z-index: 5;
+}
+.drinkphotos{
+  transition: 1s;
 }
