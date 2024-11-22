@@ -412,14 +412,11 @@ opacity: 100%;
 }
 .carousel-item .oneP li, 
 .carousel-item .twoP li, 
-.carousel-item .threePli{
+.carousel-item .threeP li{
   margin-right: 20px;
   
 }
-.oneP button,.twoP button,.threeP button, a{
-  display: flex;
-  bottom: 80px !important;
-}
+
   .carousel-item .oneP:hover, .carousel-item .twoP:hover, .carousel-item .threeP:hover {
     transform:none;}
   .carousel-control-prev, .carousel-control-next {
@@ -451,7 +448,7 @@ opacity: 100%;
   }
   .head h2{
     justify-content: center;
-    margin-right: 13px;
+    margin-right: 18px;
     font-weight: normal;
    
   }
