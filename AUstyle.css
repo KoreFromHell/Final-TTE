@@ -20,6 +20,8 @@ body{
      .head{
         padding-top: 20px;
         text-align: center;
+        align-items: center;
+        justify-content: center;
       } 
       .head img{
         width: 320px;
@@ -28,6 +30,7 @@ body{
       }
       .head h2{
         padding-top: 40px;
+        text-align: center;
       }
       .first{
           border: solid 1.5px black;
@@ -180,11 +183,8 @@ body{
   padding-bottom: 10px;
         
        }   
-       h2{
-        color: wheat;
-        font-style: italic;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+      
+    
      section h3{
         
         color: aliceblue;
@@ -387,6 +387,7 @@ body{
     height: 280px;
    
   }
+ 
   .card{
   opacity: 100%;
   transition: transform 0s, z-index 0s;
@@ -412,33 +413,46 @@ opacity: 100%;
 .carousel-item .oneP li, 
 .carousel-item .twoP li, 
 .carousel-item .threePli{
-  margin: 20px;
+  margin-right: 20px;
+  
 }
-
+.oneP button,.twoP button,.threeP button, a{
+  display: flex;
+  bottom: 80px !important;
+}
   .carousel-item .oneP:hover, .carousel-item .twoP:hover, .carousel-item .threeP:hover {
     transform:none;}
   .carousel-control-prev, .carousel-control-next {
     width: 25px;
     height: 25px;
-    bottom: 40px;
+    bottom: 50px !important;
 }
 
 .carousel-control-prev {
-    margin-left: 5%;
+  margin-left: 75%;
+    
 }
 
 .carousel-control-next {
-    margin-right: 5%;
+    margin-right: 10%;
 }
-  
+  .carousel-item button{
+    bottom: 100px !important;
+  }
  
 }
 
 
 @media only screen and (max-width: 576px) {
   .head img{
-    width: 250px;
-    height: 280px;
+    width: 230px;
+    height: 260px;
+   margin-right: 50px;
+  }
+  .head h2{
+    justify-content: center;
+    margin-right: 13px;
+    font-weight: normal;
    
   }
 /* Carousel item adjustments */
@@ -464,22 +478,19 @@ transform:none;}
 .carousel-control-prev, .carousel-control-next {
 width: 25px;
 height: 25px;
-bottom: 40px;
+bottom: 50px !important;
 }
 
 .carousel-control-prev {
-margin-left: 5%;
+margin-left: 75%;
+
 }
 
 .carousel-control-next {
-margin-right: 5%;
+margin-right: 10%;
 }
 
 
-  .carousel-control-prev, .carousel-control-next {
-      width: 20px;
-      height: 20px;
-      bottom: 30px;
-  }
+  
 
 }

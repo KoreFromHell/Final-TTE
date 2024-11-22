@@ -127,28 +127,20 @@ hr{
 }
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-.row {
-    flex-direction: column;
-    align-items: center;
-}
-.col {
-    flex-basis: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    
-}
-.col pre{overflow: hidden;
-  text-align: center !important;
-  
-left: 30px !important;
-  width: 100%;
-}
- 
-.row p {
-    font-size: 18px;
-}
-.social-icons .fab {
-    margin-right: 5px;
-}
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  .col {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  .row p {
+      font-size: 18px;
+  }
+  .social-icons .fab {
+      margin-right: 5px;
+  }
 }
 
