@@ -634,3 +634,84 @@ margin: 20px auto;
 text-align: center;
 background: transparent;
 }
+
+
+
+
+
+
+/*responsive */
+/* Policy Section */
+.policy {
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .policy {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .policy h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .policy .title {
+        font-size: 20px;
+    }
+
+    .policy p, .policy li p {
+        font-size: 14px;
+        line-height: 1.5;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .policy li {
+        padding-left: 10px;
+    }
+}
+
+/* Font Scaling for Mobile */
+h1, .title {
+    font-family: 'Times New Roman', serif;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .policy p, .policy li p {
+        font-size: 12px;
+    }
+}
+
+
+
+/* General Adjustments for Content Spacing */
+p, li p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+hr {
+    width: 85%;
+    margin: 20px auto;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 480px) {
+    hr {
+        width: 90%;
+    }
+}
