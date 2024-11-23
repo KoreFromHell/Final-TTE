@@ -66,9 +66,14 @@
               <li><a href="product.html">Product</a></li>
               <li><a href="review.html">Review</a></li>
               <li><a href="about-us.html">About US</a></li>
+              <li><button><a href="package.html">Book A Table</a></button></li>
             </ul>
+             <!-- Hamburger icon for mobile view -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
           </nav>
-          <button><a href="package.html">Book A Table</a></button>
+          
         </div>
         <div class="content">
           <h1>Welcome</h1>
@@ -292,6 +297,26 @@
         i++;
         setTimeout("slider()", 3000);
       }
+
+
+
+      /*for responsive navbar*/
+
+function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    const hamburgerIcon = document.querySelector('.hamburger i');
+
+    navbar.classList.toggle('active');
+
+    if (navbar.classList.contains('active')) {
+        hamburgerIcon.classList.remove('fa-bars');
+        hamburgerIcon.classList.add('fa-times');
+    } else {
+        hamburgerIcon.classList.remove('fa-times');
+        hamburgerIcon.classList.add('fa-bars');
+    }
+}
+
     </script>
   </body>
 </html>

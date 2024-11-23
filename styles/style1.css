@@ -93,6 +93,9 @@ nav li {
     transition: 0.5s;
     background: transparent;
 }
+ul li a{
+    font-size: 20px;
+}
 
 a,
 button {
@@ -151,7 +154,7 @@ nav li:hover.dropdown ul li {
 }
 
 .content {
-    padding: 100px;
+    padding: 120px;
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1014,3 +1017,105 @@ footer a:hover {
         padding: 40px;
     }
 }
+
+
+
+/*responsive navbar start*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  
+  .hamburger {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 20; /* Ensure it’s on top */
+     
+  }
+  
+  /* Show Hamburger Icon on Smaller Screens */
+  @media screen and (max-width: 768px) {
+    .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        padding: 20px;
+        z-index: 10;
+        
+    }
+  
+    .navbar nav ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+    .navbar nav ul {
+      display: none;
+  }
+  
+    .hamburger {
+        display: block;
+    }
+  
+    .navbar.active nav ul {
+        display: flex;
+    }
+  
+    .navbar.active nav ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      z-index: 10;
+    
+  }
+  
+  
+  .navbar.active .book-table-btn {
+    display: block;
+    width: 100%;
+  }
+  }
+  
+  
+  /*responsive button start */
+  
+  /* Button Styling */
+  .book-table-btn {
+    background: black;
+    border: 2px solid red;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+  
+  .book-table-btn a {
+    color: rgb(231, 135, 135);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Adjust for Mobile View */
+  @media screen and (max-width: 768px) {
+    .book-table-btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+  }
