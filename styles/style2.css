@@ -80,7 +80,9 @@ body {
 
 .container .card:hover .box .content h3,
 .container .card:hover .box .content p {
-    color: #fff;
+    color: #000000;
+    transform: translateY(-10px);
+    
 }
 
 .container .card .box .content a {
