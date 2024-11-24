@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -24,11 +24,13 @@
    <link rel="canonical" href="https://tipsy-topsy-eggy-hbbp.onrender.com/">
 
 <title>Review</title>
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+<title>Review</title>
 <link rel="stylesheet" href="reviewnavbar.css"/>
 <link rel="stylesheet" href="review.css"/>
 <link rel="stylesheet" href="reviewfooter.css"/>
-<link rel="stylesheet" href="bootstrap.min.css"/>
-   <link rel="stylesheet" href="all.min.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -38,58 +40,60 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <script
+    <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
 
-    <script src="js/bootstrap.bundle.min.js" defer ></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
     <script src="https://use.fontawesome.com/a6f0361695.js"></script>
   </head>
-  <body>    
+  <body>
+
+    
+    
   
       <div class="container">
-       <div class="navbar">
-    <div class="logo">
-      <a href="index.html">TISPY TOPSY EGGY</a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="reservation.html">Reservation</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="review.html">Review</a></li>
-        <li><a href="about-us.html">About US</a></li>
-        <li><button class="BAT"><a href="package.html">Book A Table</a></button></li>
-      </ul>
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">TISPY TOPSY EGGY</a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="review.html">Review</a></li>
+              <li><a href="about-us.html">About US</a></li>
+              <li><button class="BAT"><a href="package.html">Book A Table</a></button></li>
+            </ul>
+            
+             <!-- Hamburger icon for mobile view -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+          
+          </nav>
+         
+        </div>
       
-       <!-- Hamburger icon for mobile view -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <i class="fas fa-bars"></i>
-    </div>
-    
-    </nav>
-   
-  </div>
-
-  
-<script>
-      function toggleMenu() {
-          const navbar = document.querySelector('.navbar');
-          const hamburgerIcon = document.querySelector('.hamburger i');
-
-          navbar.classList.toggle('active');
-
-          if (navbar.classList.contains('active')) {
-              hamburgerIcon.classList.remove('fa-bars');
-              hamburgerIcon.classList.add('fa-times');
-          } else {
-              hamburgerIcon.classList.remove('fa-times');
-              hamburgerIcon.classList.add('fa-bars');
-          }
-      }
-</script>
-
+        
+      <script>
+            function toggleMenu() {
+                const navbar = document.querySelector('.navbar');
+                const hamburgerIcon = document.querySelector('.hamburger i');
+      
+                navbar.classList.toggle('active');
+      
+                if (navbar.classList.contains('active')) {
+                    hamburgerIcon.classList.remove('fa-bars');
+                    hamburgerIcon.classList.add('fa-times');
+                } else {
+                    hamburgerIcon.classList.remove('fa-times');
+                    hamburgerIcon.classList.add('fa-bars');
+                }
+            }
+      </script>
         <!-- <div class="border rounded-3 m-3 p-4 shadow border-opacity-25"> -->
         <h3>Reviews</h3>
         <hr />
@@ -99,7 +103,7 @@
               4.0
               <div class="star-rating">&#9733;&#9733;&#9733;&#9733;</div>
             </div>
-            <small class="text-light">10k ratings</small>
+            <small class="text-white">10k ratings</small>
           </div>
           <div class="col-lg-9 col-md-6">
             <div class="bar-container">
@@ -256,56 +260,55 @@
           >Leave a review</a
         >
       </div>
-
-      <div class="foot mt-5">
-        <footer>
-          <div class="row footerRow">
-            <div class="col footerCol">
-              <p>TIPSY TOPSY EGGY</p>
-              <pre>
-                Welcome to the TIPSY TOPSY EGGY.
-                Make Moments, Live Your Life
-                sip, sip, Hooray
-                Let the Good Times Roll.
-                Memories that Last a Lifetime.
-              </pre>
-            </div>
-            <div class="col footerCol">
-              <ul>
-                <li>
-                  <a href="https://www.drinkaware.co.uk/"
-                    >WWW.DRINKAWARE.CO.UK</a
-                  >
-                </li>
-                <li><a href="privacypolicy.html">PRIVACY POLICY</a></li>
-                <li><a href="cookiepolicy.html">COOKIE POLICY</a></li>
-                <li><a href="terms&conditions">TERMS&CONDITIONS</a></li>
-              </ul>
-            </div>
-            <div class="col footerCol">
-              <a href="contactus.html">CONTACT US</a>
-              <form>
-                <i class="far fa-envelope"></i>
-                <input type="email" placeholder="enter your email" required />
-                <button type="submit">
-                  <i class="fas fa-arrow-right"></i>
-                </button>
-              </form>
-              <h4 class="social-updates">SOCIAL UPDATES</h4>
-              <div class="social-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-youtube"></i>
-              </div>
+    </div>
+    <div class="foot mt-5">
+      <footer>
+        <div class="row footerRow">
+          <div class="col footerCol">
+            <p>TIPSY TOPSY EGGY</p>
+            <pre>
+              Welcome to the TIPSY TOPSY EGGY.
+              Make Moments, Live Your Life
+              sip, sip, Hooray
+              Let the Good Times Roll.
+              Memories that Last a Lifetime.
+            </pre>
+          </div>
+          <div class="col footerCol">
+            <ul>
+              <li>
+                <a href="https://www.drinkaware.co.uk/"
+                  >WWW.DRINKAWARE.CO.UK</a
+                >
+              </li>
+              <li><a href="privacypolicy.html">PRIVACY POLICY</a></li>
+              <li><a href="cookiepolicy.html">COOKIE POLICY</a></li>
+              <li><a href="terms&conditions">TERMS&CONDITIONS</a></li>
+            </ul>
+          </div>
+          <div class="col footerCol">
+            <a href="contactus.html">CONTACT US</a>
+            <form>
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="enter your email" required />
+              <button type="submit">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+            <h4 class="social-updates">SOCIAL UPDATES</h4>
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
             </div>
           </div>
-          <hr />
-          <h3 class="copyright h4">
-            TIPSY TOPSY &copy 2024 - All Rights Reserved
-          </h3>
-        </footer>
-      </div>
+        </div>
+        <hr />
+        <h3 class="copyright h4">
+          TIPSY TOPSY &copy 2024 - All Rights Reserved
+        </h3>
+      </footer>
     </div>
   </body>
 </html>
