@@ -68,26 +68,6 @@ body{
       display: block;
 
     }
-      .card{
-    display: flex;
-    float: left;
-    margin: 20px 50px 20px 100px;
-    text-align: center;
-    justify-content: center;  
-    align-items: center;
-    color: #190A05;
-    
-    background: #1e1e1e;  
-    background: -webkit-linear-gradient(to right, #190A05, #1e1e1e);  
-    background: linear-gradient(to right, #190A05, #1e1e1e);  
-
-  }
- 
-  .card img{
-    display: flex;
-  }
-
-  
      
       .middle h2{
         text-align: center;
@@ -115,19 +95,23 @@ body{
         margin: 0%;
       }
     
-      .card {
-  display: block;
-  margin:60px 35px 50px 9%;
-  text-align: center;
-  justify-content: center;  
-  align-items: center;
-  color: #190A05;
-  
-  transition: transform 0.5s, z-index 0.5s;
-  z-index: 1;
-  position: relative;
-  opacity: 70%;
-}
+      .card{
+        display: flex;
+        float: left;
+        margin:60px 35px 50px 9%;
+        text-align: center;
+        justify-content: center;  
+        align-items: center;
+        color: #190A05;
+        background: #1e1e1e;  
+        background: -webkit-linear-gradient(to right, #190A05, #1e1e1e);  
+        background: linear-gradient(to right, #190A05, #1e1e1e);  
+        transition: transform 0.5s, z-index 0.5s;
+        z-index: 1;
+        position: relative;
+        opacity: 70%;
+    
+      }
 
 .card:hover {
   transform: scale(1.15);
@@ -138,6 +122,7 @@ body{
 .card img {
   width: 100%;
   height: auto;
+  display: flex;
 }
       .card-1body p{
         text-align: justify;
