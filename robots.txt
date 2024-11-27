@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://tipsy-topsy-eggy-hbbp.onrender.com/sitemap.xml
-
