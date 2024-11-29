@@ -833,6 +833,10 @@ img {
     }
     .product-photo img{
       width: 200px;
+      height: 250px;
+    }
+    .menu-button,.reservation-button{
+      margin-top: 20px;
     }
   
     /* Content Blocks */

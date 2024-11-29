@@ -15,7 +15,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+<<<<<<< HEAD
     background: linear-gradient(50deg, #02090f, #212e3b);
+=======
+    background: #00093C;
+>>>>>>> fb3ed746d79774e34b9608c25514cfc574cd18b5
     padding: 10px;
     overflow-x: hidden;
 }
