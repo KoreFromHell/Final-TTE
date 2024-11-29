@@ -835,8 +835,8 @@ img {
       width: 200px;
       height: 250px;
     }
-    .menu-button,.product-button,.reservation-button{
-      padding: 20px;
+    .menu-button,.reservation-button{
+      margin-top: 20px;
     }
   
     /* Content Blocks */
