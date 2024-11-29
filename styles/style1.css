@@ -11,7 +11,7 @@
 
 .banner {
     width: 100%;
-    height: 120vh;
+    height: 63vh;
     position: relative;
     overflow: hidden;
 
@@ -19,7 +19,7 @@
 
 .slider {
     width: 100%;
-    height: 120vh;
+    height: 63vh;
     position: absolute;
     top: 0;
 }
@@ -107,7 +107,7 @@ button {
 }
 
 button {
-    background: black;
+    background-color: black;
     border: 2px solid red;
     border-radius: 50px;
     padding: 10px 25px;
@@ -115,6 +115,7 @@ button {
 
 nav li a:hover {
     color: red;
+    background-color: transparent;
 }
 
 .nav ul li .active::after {
@@ -220,6 +221,7 @@ body {
     font-family: var(--body-font);
     background-color: var(--body-color);
     color: var(--text-color);
+    background-color: black;
 }
 
 img {
@@ -235,15 +237,18 @@ img {
     margin: 0 auto;
     padding: 10px 10px;
     text-align: center;
-    background-color: #f8f8f8;
-    margin-bottom: 20px;
+    background-color: black;
+    margin-bottom: 80px;
+    margin-top: 60px;
+    border-radius: 10px;
 }
+
 
 /* Title styling with animation */
 .container_title {
     font-size: 2.5em;
     font-weight: bold;
-    color: #333;
+    color: #f5f0f0;
     margin-bottom: 10px;
     position: relative;
 }
@@ -286,7 +291,9 @@ img {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff;
+    background-color: #383737;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* Card image styling */
@@ -307,7 +314,8 @@ img {
 .card__data {
     width: 90%;
     max-width: 300px;
-    background-color: var(--container-color);
+    /* background-color: var(--container-color); */
+    background-color: black;
     padding: 1.5rem 2rem;
     border-radius: 1rem;
     position: absolute;
@@ -316,6 +324,7 @@ img {
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    color: white;
 }
 
 .card__article:hover .card__data {
@@ -332,15 +341,16 @@ img {
 .card__title {
     font-size: var(--h2-font-size);
     font-weight: 500;
-    color: var(--title-color);
-    margin-bottom: 0.75rem;
+    /* color: var(--title-color); */
+    color: wheat;
 }
 
 .card__button {
     text-decoration: none;
     font-size: var(--small-font-size);
     font-weight: 500;
-    color: var(--first-color);
+    /* color: var(--first-color); */
+    color: white;
     transition: color 0.3s ease;
 }
 
@@ -473,7 +483,7 @@ img {
 /* Main Tours Section Styling */
 .tours {
     padding: 60px 20px;
-    background-color: #f9fafb; 
+    background-color: black; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -486,7 +496,7 @@ img {
     position: relative;
     margin: 20px 0;
     font-family: 'Playfair Display', serif; 
-    color: #333;
+    color: #d8d4d4;
 }
 
 .content-col h1::before {
@@ -504,7 +514,7 @@ img {
 /* Description Text Styling */
 .content-col p {
     font-size: 1.1em;
-    color: #555;
+    color: #d9cece;
     max-width: 600px;
     margin: 20px auto;
     line-height: 1.6;

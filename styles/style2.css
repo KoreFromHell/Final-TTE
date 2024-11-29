@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(50deg, #d07cf7, #da3b3b);
+    background: linear-gradient(50deg, #02090f, #212e3b);
     padding: 10px;
     overflow-x: hidden;
 }
@@ -35,7 +35,7 @@ body {
     flex: 1 1 calc(33.333% - 20px); /* Three cards per row on desktop */
     max-width: 350px;
     min-width: 280px;
-    background: #ebf5fc;
+    background: #232526;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -67,20 +67,20 @@ body {
 
 .container .card .box .content h3 {
     font-size: 1.4em;
-    color: #333;
+    color: whitesmoke;
     margin-bottom: 10px;
 }
 
 .container .card .box .content p {
     font-size: 1em;
-    color: #555;
+    color: whitesmoke;
     line-height: 1.5;
     margin: 10px 0;
 }
 
 .container .card:hover .box .content h3,
 .container .card:hover .box .content p {
-    color: #000000;
+    color: whitesmoke;
     transform: translateY(-10px);
     
 }
@@ -182,4 +182,20 @@ body {
     .box-content p {
         font-size: 0.9em;
     }
+}
+.back{
+    text-align: center;
+   
+}
+.back button{
+    width: 80px;
+    background-color: black;
+}
+.back a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.back a:hover{
+    color:rgb(38, 99, 160);
 }

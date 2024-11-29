@@ -12,7 +12,7 @@
 }
 .card{
     background-color: rgb(27, 22, 22);
-    margin: 50px 40px 70px 100px;
+    margin: 50px 50px 70px 80px;
     height: auto;
     flex-direction: column;
     display: flex;
