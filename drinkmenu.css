@@ -55,6 +55,16 @@ main {
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
+    float: left;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  float: left;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 body {
@@ -446,6 +456,7 @@ button a:hover{
     background-color: black;
     width: 100%;
     height: auto;
+    float: left;
   }
   footer{
     width: 100%;
@@ -457,6 +468,7 @@ button a:hover{
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
+    float: left;
   }
   .row{
     margin: auto;
