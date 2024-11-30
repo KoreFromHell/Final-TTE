@@ -431,7 +431,7 @@ button a:hover{
   /* Adjust for Mobile View */
   @media screen and (max-width: 768px) {
     .book-table-btn {
-       /* width: 100%; */
+        width: auto;
         margin-top: 20px;
     }
   }
