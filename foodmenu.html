@@ -61,6 +61,22 @@
             </div>
         </nav>
     </div>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            const hamburgerIcon = document.querySelector('.hamburger i');
+
+            navbar.classList.toggle('active');
+
+            if (navbar.classList.contains('active')) {
+                hamburgerIcon.classList.remove('fa-bars');
+                hamburgerIcon.classList.add('fa-times');
+            } else {
+                hamburgerIcon.classList.remove('fa-times');
+                hamburgerIcon.classList.add('fa-bars');
+            }
+        }
+    </script>
 
     <!-- Header -->
     <header>
