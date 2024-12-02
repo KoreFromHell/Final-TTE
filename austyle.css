@@ -31,6 +31,8 @@ body{
       .head h2{
         padding-top: 40px;
         text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
       }
       .first{
           border: solid 1.5px black;
@@ -62,6 +64,8 @@ body{
         color: aliceblue;
         text-indent: 40px;
         line-height: 35px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
       }
     
     article{
@@ -72,9 +76,9 @@ body{
       .middle h2{
         text-align: center;
         color: rgb(225, 218, 228);
-        padding: 35px ;
+        padding: 30px ;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding-top: 30px;
+        
         
 
       }
@@ -83,10 +87,14 @@ body{
         line-height: 35px;
         text-indent: 50px;
         color: rgb(225, 218, 228);
-        padding: 10px 35px 15px 35px; 
+        padding: 10px 35px 15px 15px; 
         font-size: 20px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;          
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-style: italic;
+        border: 2px solid none;
+        width: 65%;
+        height: auto;
+        margin: 0px 17% 20px 17%;
       }
       .middle button{
         border: none;
@@ -131,6 +139,8 @@ body{
         color: whitesmoke;
         font-size: 16px;
         float: left;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
       }
       .card-2body p{
         text-align: justify;
@@ -139,6 +149,8 @@ body{
         color: whitesmoke;
         font-size: 16px;
         float: left;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
       }
       .card-3body p{
         text-align: justify;
@@ -147,6 +159,8 @@ body{
         color: whitesmoke;
         font-size: 16px;
         float: left;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
       }
       .card h4{
         color: white;
@@ -177,7 +191,8 @@ body{
         font-family: Arial, Helvetica, sans-serif;
        float: left;
        text-align: center;
-      
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
         
     text-align: center;
     font-style: italic;
@@ -209,6 +224,8 @@ body{
         opacity: 0;
         transition: all 0.9s ease-out;
         overflow: auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     }
     .oneP:hover{    
         opacity: 100%;
@@ -218,6 +235,8 @@ body{
         display: block;
         color: wheat;
         text-align: left;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     
     }
     
@@ -225,6 +244,8 @@ body{
         display: block; 
         color: aliceblue;
         font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
        
     }
     
@@ -239,6 +260,8 @@ body{
     height: auto;
     display: flex;
     float: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     }
     
     .two img{
@@ -260,6 +283,8 @@ body{
         opacity:0;
         transition: all 0.9s ease-out;
         overflow: auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
        
     }
     .twoP:hover{
@@ -270,15 +295,20 @@ body{
         display: block;
         color: wheat;
         text-align: left;
-    
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     }
     .twoP p{
         display: block;
         color: aliceblue;
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     }
     .twoP ul{
         display: block;
         float: left;
+        
     }
     .three{
         width: 53%;
@@ -293,6 +323,7 @@ body{
         float: left;
         position: relative;
         margin: 20px 20px 20px 20px;
+
     }
     .threeP{
         float: left;
@@ -302,6 +333,8 @@ body{
         opacity:0;
         transition: all 0.9s ease-out;
         overflow: auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     }
     .threeP:hover{
         transform: translateY(80px);
@@ -310,10 +343,15 @@ body{
     .threeP h3{display: block;
         color: wheat;
         text-align: left;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
       }
     .threeP p{
         display: block;
         color: aliceblue;
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     }  
     .threeP ul{
         display: block;
@@ -323,6 +361,8 @@ body{
     color: white;
     margin: 0px 150px 0px 15px;
     text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     }
     
     .carousel-control-prev,.carousel-control-next{
