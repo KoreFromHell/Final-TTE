@@ -400,11 +400,7 @@ body{
 /* Tablet and mobile adjustments */
 @media only screen and (max-width: 768px) {
 
-  .navbar ul {
-      flex-direction: column;
-      text-align: left;
-  }
-  .banner, .head {
+ .head {
       text-align: center;
   }
   .head img{
@@ -412,11 +408,17 @@ body{
     height: 280px;
    
   }
- 
+  .middle p{
+    
+  width: 95%;
+  margin: 0 auto;
+  } 
   .card{
   opacity: 100%;
   transition: transform 0s, z-index 0s;
   z-index: 0;
+  align-items: center;
+  justify-content: center;
   }
   /* Carousel item adjustments */
 

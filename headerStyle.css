@@ -51,7 +51,7 @@
 
 .navbar{
     width: 100%;
-    height: 20px;
+    height: auto;
     display: flex;
     align-items: center;
     margin: 35px auto;
@@ -59,7 +59,7 @@
     justify-content: space-between;
 }
   
-  .navba{
+  .navbar{
     margin-right: auto;
   
   }
@@ -76,8 +76,9 @@
     color: rgb(255, 255, 255);
     text-shadow: 3px 4px 4px rgba(255, 0, 0, 0.8);
     font-size: 35px;
-    font-family: 'Courier New', Courier, monospace;
-
+    font-family: 'Times New Roman', Times, serif;
+ 
+   
     
 }
 .logo a:hover{
@@ -90,6 +91,14 @@
         position: relative;
         transition: 0.5s;
         background: transparent;
+        color: rgb(231, 135, 135);
+     
+
+    }
+    nav li a{
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 40px;
+      
     }
  a, .BAT a{
     font-size: 18px;
@@ -116,7 +125,7 @@
 nav li a:hover{
     color: red;
 }
-.nav ul li .active::after{
+nav ul li .active::after{
   content: '';
   width: 100%;
   height: 3px;
@@ -135,48 +144,311 @@ button{
     padding: 10px 10px;
     
 }
-/* nav li a:hover, button a:hover {
+ nav li a:hover, button a:hover {
     color: red;
-}
+} 
 
-.dropdown {
-    display: none;
-}
 
-nav li:hover .dropdown {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-}
+/*RESPONSIVE START */
 
-.dropdown ul {
-    width: 150px;
-    display: block;
-    margin: 10px;
-}
-
-.dropdown ul li {
-    width: 150px;
-    padding: 10px;
-} */
-
-@media (max-width: 800px) {
-    .hideOnMobile {
-        display: none;
+  
+ 
+  
+  /* Base Styles */
+  * {
+    box-sizing: border-box;
+  }
+  
+  .banner,
+  .overlay {
+    width: 100%;
+  }
+  
+ 
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 999px) {
+    /* Navigation */
+    .navbar {
+      flex-direction: column;
     }
-    .menu-but {
-        display: block;
+    .navbar nav ul {
+      flex-direction: column;
+      padding: 0;
     }
+    .navbar nav ul li {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    
+  }
+  
+  /* responsive start */
+  @media screen and (max-width: 690px) {
+    /* Navigation Links */
+    nav li {
+      font-size: 14px;
+    }
+  
+  
+    /* Footer */
+    .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
    
-    button {
-        display: flex;
-        margin-top: 30px;
+  }
+  /*responsive end*/
+  
+  /*  responsive navbar start*/
+  /* Base Navbar Styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 10; /* Ensure it’s on top */
+  }
+  
+  /* Show Hamburger Icon on Smaller Screens */
+  @media screen and (max-width: 768px) {
+    .navbar nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      background: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      padding: 20px;
+      z-index: 10;
+      
     }
-}
-
-@media (max-width: 400px) {
-    .sidebar {
+  
+    .navbar nav ul li {
+      padding: 10px 0;
+      text-align: center;
+    }
+    .navbar nav ul {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+      top: 0px;
+    }
+  
+    .navbar.active nav ul {
+      display: flex;
+    }
+  
+    .navbar.active nav ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      z-index: 10;
+    }
+  
+    .navbar.active .book-table-btn {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  /*responsive button start */
+  
+  /* Button Styling */
+  .book-table-btn {
+    background: black;
+    border: 2px solid red;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+  
+  .book-table-btn a {
+    color: rgb(231, 135, 135);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Adjust for Mobile View */
+  @media screen and (max-width: 768px) {
+    .book-table-btn {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  /* book a table button adjustment*/
+  /* Style the "Book a Table" Button Within the Navbar List */
+  .book-table-btn {
+    background: black;
+    border: 2px solid red;
+    border-radius: 50px;
+    padding: 10px 25px;
+    color: rgb(231, 135, 135);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .book-table-btn a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Show Hamburger Icon on Smaller Screens */
+@media screen and (max-width: 768px) {
+    .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        padding: 20px;
+        z-index: 10;
+        
+    }
+  
+    .navbar nav ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+    .navbar nav ul {
+      display: none;
+  }
+  
+    .hamburger {
+        display: block;
+        top: 0px;
+    }
+  
+    .navbar.active nav ul {
+        display: flex;
+    }
+  
+    .navbar.active nav ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      z-index: 10;
+    
+  }
+  
+  
+  .navbar.active .book-table-btn {
+    display: block;
+    width: 100%;
+  }
+  }
+  
+  
+  /*responsive button start */
+  
+  /* Button Styling */
+  .book-table-btn {
+    background: black;
+    border: 2px solid red;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+  
+  .book-table-btn a {
+    color: rgb(231, 135, 135);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Adjust for Mobile View */
+  @media screen and (max-width: 768px) {
+    .book-table-btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+  }
+  
+  
+  
+  /* book a table button adjustment*/
+  /* Style the "Book a Table" Button Within the Navbar List */
+  .book-table-btn {
+    background: black;
+    border: 2px solid red;
+    border-radius: 50px;
+    padding: 10px 25px;
+    color: rgb(231, 135, 135);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .book-table-btn a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Align Button with Menu Items on Mobile */
+  @media screen and (max-width: 768px) {
+    .logo a{
+        font-size: 28px;
+    }
+ 
+    .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        padding: 20px;
+    }
+  
+    .navbar.active nav ul {
+        display: flex;
+    }
+  
+    .navbar nav ul li {
+        text-align: center;
+        padding: 10px 0;
         width: 100%;
     }
-}
+  
+    .book-table-btn {
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px 0;
+        text-align: center;
+    }
+  }
