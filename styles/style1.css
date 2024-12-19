@@ -1143,12 +1143,12 @@ footer a:hover {
   
   }
   .academic{
-    background-color: transparent;
-    margin-top: 20px;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    margin-top: 0px;
     
   }
   .academic p{
-    text-align: center;
-    background-color: transparent;
+color: white;
+    font-size: 14px;
   
   }
