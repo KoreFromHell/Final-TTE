@@ -636,5 +636,14 @@ hr{
 }
 
 /*footer end */ 
+.academic{
+  background-color: transparent;
+  margin-top: 20px;
+  
+}
+.academic p{
+  text-align: center;
+  background-color: transparent;
 
+}
 

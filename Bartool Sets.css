@@ -667,3 +667,13 @@ margin: 20px;
     margin: 10px 0; /* Add spacing between cards */
 }
 }
+.academic{
+  background-color: transparent;
+  margin-top: 20px;
+  
+}
+.academic p{
+  text-align: center;
+  background-color: transparent;
+
+}

@@ -621,6 +621,16 @@ hr{
     text-align: center;
     background: transparent;
 }
+.academic{
+  background-color: transparent;
+  margin-top: 20px;
+  
+}
+.academic p{
+  text-align: center;
+  background-color: transparent;
+
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .row {

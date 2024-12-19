@@ -131,8 +131,6 @@ hr{
 }
 .academic p{
   text-align: center;
-  margin-top: 0%;
-  color: white;
 }
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {

@@ -715,3 +715,13 @@ hr {
         width: 90%;
     }
 }
+.academic{
+    background-color: transparent;
+    margin-top: 20px;
+    
+  }
+  .academic p{
+    text-align: center;
+    background-color: transparent;
+  
+  }
